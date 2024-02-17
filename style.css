@@ -1,4 +1,90 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --clrwhite: hsl(0, 0%, 99%);
+    --clrblack: hsl(210, 36%, 9%);
+    --clryellow: hsl(54, 92%, 58%);
+}
+
+/* general component styles */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    border-style: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+body{
+    background-color: var(--clrwhite);
+}
+h1, h2, h3{
+    font-weight: 700;
+}
+.container{
+    width: 70rem;
+    margin: 0 auto;
+    /* outline: 2px solid rgb(255, 49, 49); */
+}
+/* general component styles */
 
 
+/* custom styles */
+/* HERO SECTION */
+#hero{
+    background-image: url(/assets/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.nav-container{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a img{
+    width: 3.5rem;
+    height: auto;
+}
+.list a{
+    font-weight: 400;
+    margin-left: 4rem;
+    text-decoration: none;
+    color: var(--clrwhite);
+}
+.hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.8rem 4.8rem 1.9rem 4.8rem;
+}
+.hero-text{
+    line-height: 4rem;
+    color: var(--clrwhite);
+}
+.hero-text h1{
+    color: var(--clryellow);
+    line-height: 5rem;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.hero-text p{
+    font-size: 1.1rem;
+}
+.hero-image img{
+    width: 27rem;
+    height: auto;
+}
+.arrow-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+/* HERO SECTION */
+
+/* ABOUT ME SECTION */
+
+/* ABOUT ME SECTION */
