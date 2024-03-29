@@ -26,7 +26,7 @@ h1, h2, h3{
 .container{
     width: 70rem;
     margin: 0 auto;
-    /* outline: 2px solid rgb(255, 49, 49); */
+    outline: 2px solid rgb(255, 49, 49);
 }
 /* general component styles */
 
@@ -87,11 +87,60 @@ h1, h2, h3{
 /* HERO SECTION */
 
 /* ABOUT ME SECTION */
-/* 
-#aboutme{
-    display: flex;
-} */
 
+.one {
+  background-color: antiquewhite;
+  outline: 2px solid rgb(255, 49, 49);
+}
+.two {
+  background-color: aqua;
+  outline: 2px solid rgb(255, 49, 49);
+}
+.three {
+  background-color: rgb(35, 189, 48);
+  outline: 2px solid rgb(255, 49, 49);
+}
+
+#slider {
+  overflow: hidden;
+}
+#slider .figure {
+  position: relative;
+  width: calc(100vw * 4);
+  margin: 0;
+  left: 0;
+  animation: 10s slider infinite;
+}
+.slideHolder {
+  float: left;
+  width: calc(100% / 4);
+  outline: 2px solid rgb(55, 0, 255);
+}
+
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  28.33%{
+    left: 0;
+  }
+  33.33% {
+    left: -100%;
+  }
+  61.66% {
+    left: -100%;
+  }
+  66.66% {
+    left: -200%;
+  }
+  95% {
+    left: -200%;
+  }
+  100% {
+    left: -300%; 
+  }
+}
 
 
 
