@@ -108,8 +108,12 @@ h1, h2, h3{
 #slider .figure {
   position: relative;
   width: 400%;
-  animation: 10s slider infinite;
+  /* animation: 10s slider infinite; */
+
 }
+
+
+
 .slideHolder {
   display: flex;
   height: 35rem;
@@ -119,7 +123,7 @@ h1, h2, h3{
 }
 
 
-@keyframes slider {
+/* @keyframes slider {
   0% {
     left: 0;
   }
@@ -141,7 +145,7 @@ h1, h2, h3{
   100% {
     left: -300%; 
   }
-}
+} */
 
 /* .description p{
   width: 60rem;
