@@ -2,17 +2,12 @@
 // const figure = document.querySelector(".figure"); // Use querySelector for single element
 
 // showMore.addEventListener("click", () => {
-//   figure.style.left = "-100%"; // Set left position to -100%
-// });
-
-// showMore.addEventListener("click", () => {
 //     figure.classList.add("slide-left"); // Add a class with transition
 //   });
 
 const showMore = document.querySelector("#showMore");
 const mySkills = document.querySelector("#mySkills");
 const returnBack = document.querySelector("#returnBack");
-
 
 showMore.addEventListener("click", () => {
   scroll_(0, 100);
