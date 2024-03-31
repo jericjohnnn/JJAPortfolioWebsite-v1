@@ -8,42 +8,36 @@
 // showMore.addEventListener("click", () => {
 //     figure.classList.add("slide-left"); // Add a class with transition
 //   });
-// TODO IMITATE THE ANIMATION PROPERTY IN CSS WHERE ANIMATION IS INFINITE
 
-const showMore = document.getElementById("showMore");
-const slider = document.querySelector(".figure");
+const showMore = document.querySelector("#showMore");
+const mySkills = document.querySelector("#mySkills");
+const returnBack = document.querySelector("#returnBack");
+
 
 showMore.addEventListener("click", () => {
-  
-    // slider.animate([
-    //    { left: '-' + number1 + '%' },  
-    //    { left: '-'+ number2 + '%' }  
-    // ], {
-    //   duration: 1000,  // Animation duration in milliseconds
-    //   easing: 'ease-in',  // Adjust easing as needed
-    //   fill: "forwards",
-    // });
+  scroll_(0, 100);
+});
 
-  });
+mySkills.addEventListener("click", () => {
+  scroll_(100, 200);
+});
+
+returnBack.addEventListener("click", () => {
+  scroll_(200, 0);
+});
 
 
-// function scroll_right() {
-//   const slider = document.querySelector(".figure");
-//   let number1 = 0;
-//   let number2 = 100;
-//   // const scrollAmount = slider.clientWidth; // Get slider width
-  
-//     slider.animate([
-//        { left: '-' + number1 + '%' },  
-//     { left: '-'+ number2 + '%' }  
-//     ], {
-//       duration: 1000,  // Animation duration in milliseconds
-//       easing: 'ease-in',  // Adjust easing as needed
-//       fill: "forwards",
-//     });
+function scroll_(firstValue, secondValue) {
+  const slider = document.querySelector(".figure");
+
+    slider.animate([
+      { left: '-' + firstValue + '%' },  
+      { left: '-' + secondValue +'%' } 
+    ], {
+      duration: 500,  // Animation duration in milliseconds
+      easing: 'ease-in',  
+      fill: "forwards",
+    });
    
-//     number1 = number1 + 100;
-//    number2 = number2 + 100;
-//     // { left: '-100%' },  
-//     //   { left: '-200%' } 
-// }
+}
+
