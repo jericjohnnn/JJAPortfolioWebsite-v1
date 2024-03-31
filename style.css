@@ -87,6 +87,8 @@ h1, h2, h3{
 }
 /* HERO SECTION */
 
+
+
 /* ABOUT ME SECTION */
 
 .one {
@@ -111,17 +113,6 @@ h1, h2, h3{
   /* animation: 10s slider infinite; */
 
 }
-
-
-
-.slideHolder {
-  display: flex;
-  height: 35rem;
-  float: left;
-  width: calc(100% / 4);
-  outline: 2px solid rgb(55, 0, 255);
-}
-
 
 /* @keyframes slider {
   0% {
@@ -150,6 +141,15 @@ h1, h2, h3{
 /* .description p{
   width: 60rem;
 } */
+
+
+.slideHolder {
+  display: flex;
+  height: 35rem;
+  float: left;
+  width: calc(100% / 4);
+  outline: 2px solid rgb(55, 0, 255);
+}
 
 
 
