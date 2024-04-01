@@ -16,6 +16,9 @@
     font-family: "Poppins", sans-serif;
     font-weight: 300;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
     background-color: var(--clrwhite);
 
@@ -151,6 +154,24 @@ h1, h2, h3{
   outline: 2px solid rgb(55, 0, 255);
 }
 
-
-
 /* ABOUT ME SECTION */
+
+
+/* MY WORKS SECTION */
+
+#myworks{
+  background-color: var(--clrblack);
+}
+
+.myworksHeaders{
+  display: flex;
+justify-content: center;
+  outline: 2px solid rgb(55, 0, 255);
+}
+
+.myworksHeaders> h2,
+.myworksHeaders> h3{
+  color: var(--clryellow);
+}
+
+/* MY WORKS SECTION */
