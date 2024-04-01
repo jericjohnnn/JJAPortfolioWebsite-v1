@@ -29,8 +29,8 @@ function scroll_(firstValue, secondValue) {
       { left: '-' + firstValue + '%' },  
       { left: '-' + secondValue +'%' } 
     ], {
-      duration: 500,  // Animation duration in milliseconds
-      easing: 'ease-in',  
+      duration: 900,  // Animation duration in milliseconds
+      easing: 'ease',  
       fill: "forwards",
     });
    
