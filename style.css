@@ -31,6 +31,13 @@ h1, h2, h3{
     margin: 0 auto;
     outline: 2px solid rgb(255, 49, 49);
 }
+.button-one{
+  background-color: var(--clryellow);
+  padding: 0.5rem 1.7rem;
+  font-weight: 500;
+  font-style: italic;
+  border-radius: 2rem;
+}
 /* general component styles */
 
 
@@ -154,13 +161,7 @@ h1, h2, h3{
   outline: 2px solid rgb(55, 0, 255);
 }
 
-.box-shape{
-  width: 25rem;
-  height: 25rem;
-  border-radius: 2rem;
-  margin-right: 5rem;
-  background-color: blue;
-}
+
 .holder-one{
   display: flex;
   justify-content: center;
@@ -168,12 +169,43 @@ h1, h2, h3{
   height: 100%;
 }
 
+
+.box>.boxShadow{
+  width: 25rem;
+  height: 25rem;
+  border-radius: 2rem;
+  margin-right: 5rem;
+  position: absolute;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.box-shape{
+  mask-image: url(assets/laptop.png);
+  width: 25rem;
+  height: 25rem;
+  border-radius: 2rem;
+  margin-right: 5rem;
+  position: relative;
+}
+
+
+.box-shape>.laptop{
+  position: absolute;
+  left: -23%;
+  width: auto;
+  height: 105%;
+  transition: transform 0.2s ease-in-out;
+}
+.box-shape:hover>img {
+  transform: scale(1.05); 
+} 
+
 .text{
   width: 25rem;
   color: var(--clrblack);
   font-size: 1.1rem;
   line-height: 2.1rem;
-  gap: 50rem;
 }
 
 .text>h2{
@@ -181,6 +213,10 @@ h1, h2, h3{
     line-height: 5rem;
     font-size: 4rem;
     font-weight: 700;
+}
+.text>p{
+  padding: 1.3rem 0;
+  text-align: justify;
 }
 
 /* ABOUT ME SECTION */
@@ -198,8 +234,7 @@ justify-content: center;
   outline: 2px solid rgb(55, 0, 255);
 }
 
-.myworksHeaders> h2,
-.myworksHeaders> h3{
+.myworksHeaders> h2{
   color: var(--clryellow);
 }
 
