@@ -95,7 +95,7 @@ h1, h2, h3{
 /* ABOUT ME SECTION */
 
 .one {
-  background-color: antiquewhite;
+  background-color: var(--clrwhite);
   outline: 2px solid rgb(255, 49, 49);
 }
 .two {
@@ -152,6 +152,35 @@ h1, h2, h3{
   float: left;
   width: calc(100% / 4);
   outline: 2px solid rgb(55, 0, 255);
+}
+
+.box-shape{
+  width: 25rem;
+  height: 25rem;
+  border-radius: 2rem;
+  margin-right: 5rem;
+  background-color: blue;
+}
+.holder-one{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.text{
+  width: 25rem;
+  color: var(--clrblack);
+  font-size: 1.1rem;
+  line-height: 2.1rem;
+  gap: 50rem;
+}
+
+.text>h2{
+  color: var(--clrblack);
+    line-height: 5rem;
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 /* ABOUT ME SECTION */
