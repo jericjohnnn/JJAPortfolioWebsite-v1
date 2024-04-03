@@ -29,7 +29,7 @@ function scroll_(firstValue, secondValue) {
       { left: '-' + firstValue + '%' },  
       { left: '-' + secondValue +'%' } 
     ], {
-      duration: 900,  // Animation duration in milliseconds
+      duration: 750,  // Animation duration in milliseconds
       easing: 'ease',  
       fill: "forwards",
     });
