@@ -1,116 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root{
-    --clrwhite: hsl(0, 0%, 99%);
-    --clrblack: hsl(210, 36%, 9%);
-    --clryellow: hsl(54, 92%, 58%);
+:root {
+  --clrwhite: hsl(0, 0%, 99%);
+  --clrblack: hsl(210, 36%, 9%);
+  --clryellow: hsl(54, 92%, 58%);
 }
 
-/* general component styles */
+/* **general component styles */
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-    border-style: none;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-style: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-body{
-    background-color: var(--clrwhite);
-
+body {
+  background-color: var(--clrwhite);
 }
-h1, h2, h3{
-    font-weight: 700;
+h1,
+h2,
+h3 {
+  font-weight: 700;
 }
-.container{
-    width: 70rem;
-    margin: 0 auto;
-    outline: 2px solid rgb(255, 49, 49);
+.container {
+  width: 70rem;
+  margin: 0 auto;
+  outline: 2px solid rgb(255, 49, 49);
 }
-.button-one{
+.button-one {
   background-color: var(--clryellow);
-  padding: 0.5rem 1.7rem;
+  color: var(--clrblack);
+  padding: 0.4rem 1.8rem;
+  font-size: 1.1rem;
   font-weight: 500;
   font-style: italic;
   border-radius: 2rem;
+  cursor: pointer;
+}
+.button-two {
+  background-color: transparent;
+  color: var(--clryellow);
+  padding: 0.4rem 1.8rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: italic;
+  border-radius: 2rem;
+  cursor: pointer;
+  outline: 2px solid var(--clryellow);
 }
 /* general component styles */
 
 
-/* custom styles */
-/* HERO SECTION */
-#hero{
-    background-image: url(/assets/background.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+
+/* **custom styles */
+/* **HERO SECTION */
+#hero {
+  background-image: url(/assets/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
-.nav-container{
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.nav-container {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.logo a img{
-    width: 3.5rem;
-    height: auto;
+.logo a img {
+  width: 3.5rem;
+  height: auto;
 }
-.list a{
-    font-weight: 400;
-    margin-left: 4rem;
-    text-decoration: none;
-    color: var(--clrwhite);
+.list a {
+  font-weight: 500;
+  margin-left: 5rem;
+  text-decoration: none;
+  color: var(--clrwhite);
 }
-.hero-container{
+.hero-container {
   height: 33rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2.8rem 4.8rem 1.9rem 4.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.8rem 4.8rem 1.9rem 4.8rem;
 }
-.hero-text{
-    line-height: 4rem;
-    color: var(--clrwhite);
+.hero-text {
+  line-height: 4rem;
+  color: var(--clrwhite);
 }
-.hero-text h1{
-    color: var(--clryellow);
-    line-height: 5rem;
-    font-size: 4rem;
-    font-weight: 700;
+.hero-text h1 {
+  color: var(--clryellow);
+  line-height: 5rem;
+  font-size: 4rem;
+  font-weight: 700;
 }
-.hero-text p{
-    font-size: 1.1rem;
+.hero-text p {
+  font-size: 1.1rem;
 }
-.hero-image img{
-    width: 27rem;
-    height: auto;
+.hero-image img {
+  width: 27rem;
+  height: auto;
 }
-.arrow-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 3rem;
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
 }
 /* HERO SECTION */
 
 
 
-/* ABOUT ME SECTION */
+/* **ABOUT ME SECTION */
 .one {
   background-color: var(--clrwhite);
-  outline: 2px solid rgb(255, 49, 49);
 }
 .two {
-  background-color: aqua;
-  outline: 2px solid rgb(255, 49, 49);
+  background-color: var(--clrblack);
 }
 .three {
-  background-color: rgb(35, 189, 48);
-  outline: 2px solid rgb(255, 49, 49);
+  background-color: var(--clrblack);
 }
 #slider {
   overflow: hidden;
@@ -145,21 +157,21 @@ h1, h2, h3{
 } */
 .slideHolder {
   display: flex;
-  height: 38rem;
+  height: 39rem;
   float: left;
   width: calc(100% / 4);
   outline: 2px solid rgb(55, 0, 255);
 }
 
 
-/* FIRST SLIDE */
-.holder-one{
+/* ** FIRST SLIDE */
+.holder-one {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-.box>.boxShadow{
+.box > .boxShadow {
   width: 25rem;
   height: 25rem;
   border-radius: 2rem;
@@ -167,7 +179,7 @@ h1, h2, h3{
   position: absolute;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 }
-.box-shape{
+.box-shape {
   mask-image: url(assets/laptop.png);
   width: 25rem;
   height: 25rem;
@@ -175,56 +187,92 @@ h1, h2, h3{
   margin-right: 5rem;
   position: relative;
 }
-.box-shape>.laptop{
+.box-shape > .laptop {
   position: absolute;
   left: -23%;
   width: auto;
   height: 105%;
   transition: transform 0.2s ease-in-out;
 }
-.box-shape:hover>img {
-  transform: scale(1.05); 
-} 
-.text{
+.box-shape:hover > img {
+  transform: scale(1.05);
+}
+.text {
   width: 25rem;
   color: var(--clrblack);
   font-size: 1.1rem;
   line-height: 2.1rem;
 }
-.text>h2{
+.text > h2 {
   color: var(--clrblack);
-    font-size: 4rem;
-    font-weight: 700;
+  font-size: 4rem;
+  font-weight: 700;
 }
-.text>p{
+.text > p {
   padding: 2.5rem 0;
   text-align: justify;
 }
 /* FIRST SLIDE */
 
+
+/* **SECOND SLIDE */
+.holder-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-1.6rem);
+  height: 100%;
+  color: var(--clrwhite);
+}
+.heading-two {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.description-two {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.3rem;
+}
+.heading-two > h2 {
+  font-size: 4rem;
+}
+.description-two .paragraph {
+  padding-right: 6rem;
+  text-align: justify;
+  line-height: 2.1rem;
+}
+.text-height {
+  padding: 1.4rem 0;
+}
+.description-two img {
+  width: 83%;
+  height: auto;
+}
 /* SECOND SLIDE */
 
 
+/* **THIRD SLIDE */
 
-/* SECOND SLIDE */
-
-/* THIRD SLIDE */
-
-/* THIRD SLIDE */
+/* **THIRD SLIDE */
 /* ABOUT ME SECTION */
 
 
-/* MY WORKS SECTION */
-#myworks{
+
+/* **MY WORKS SECTION */
+#myworks {
   background-color: var(--clrblack);
 }
-.myworksHeaders{
+.myworksHeaders {
   display: flex;
-justify-content: center;
+  justify-content: center;
   outline: 2px solid rgb(55, 0, 255);
 }
-.myworksHeaders> h2{
+.myworksHeaders > h2 {
   color: var(--clryellow);
 }
-
 /* MY WORKS SECTION */
