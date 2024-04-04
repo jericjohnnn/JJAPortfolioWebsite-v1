@@ -257,7 +257,74 @@ h3 {
 
 
 /* **THIRD SLIDE */
-
+.holder-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-6rem);
+  height: 100%;
+  color: var(--clrwhite);
+  gap: 2rem;
+  position: relative;
+}
+.heading-three {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading-three > h2 {
+  font-size: 4rem;
+}
+.description-three{
+  display: flex;
+  gap: 10rem;
+}
+.web-dev{
+  text-align: center;
+}
+.web-dev h3{
+  font-size: 1.8rem;
+  line-height: 4rem;
+}
+.web-dev button{
+  margin: 6px 0;
+}
+.skill-icon{
+  background-color: var(--clryellow);
+  color: var(--clrblack);
+  padding: 0.3rem 1.8rem;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+}
+.gfx-design{
+  text-align: center;
+}
+.gfx-design h3{
+  font-size: 1.8rem;
+  line-height: 4rem;
+}
+.gfx-design button{
+  margin: 6px 0;
+}
+.bg-images{
+  display: flex;
+  width: 100%;
+  position: absolute;
+  justify-content: space-between;
+  align-items: end;
+ bottom: 0;
+ transform: translateY(5rem);
+}
+.webImg{
+  width: 33%;
+  height: auto;
+}
+.mobileImg{
+  width: 30%;
+  height: auto;
+}
 /* **THIRD SLIDE */
 /* ABOUT ME SECTION */
 
