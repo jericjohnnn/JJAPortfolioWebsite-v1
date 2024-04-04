@@ -292,12 +292,32 @@ h3 {
   margin: 6px 0;
 }
 .skill-icon{
-  background-color: var(--clryellow);
+  /* background-color: var(--clryellow);
   color: var(--clrblack);
   padding: 0.3rem 1.8rem;
   font-size: 1.1rem;
   border-radius: 2rem;
+  overflow: hidden;
+  position: relative;
+  transition: .5s; */
+
+  --color: #00A97F;
+ padding: 0.8em 1.7em;
+ background-color: transparent;
+ border-radius: .3em;
+ position: relative;
+ overflow: hidden;
+ cursor: pointer;
+ transition: .5s;
+ font-weight: 400;
+ font-size: 17px;
+ border: 1px solid;
+ font-family: inherit;
+ text-transform: uppercase;
+ color: var(--color);
+ z-index: 1;
 }
+
 .gfx-design{
   text-align: center;
 }
@@ -325,6 +345,50 @@ h3 {
   width: 30%;
   height: auto;
 }
+.skill-icon:hover{
+  transform: scale(1.05);
+}
+#html::before, #html::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+ }
+
+
+ #html::before {
+  top: -1em;
+  left: -1em;
+ }
+ 
+ #html::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+ }
+ 
+ #html:hover::before, #html:hover::after {
+  height: 410px;
+  width: 410px;
+ }
+ 
+ #html:hover {
+  color: rgb(10, 25, 30);
+ }
+ 
+ #html:active {
+  filter: brightness(.8);
+ }
+/* #html:hover::after{
+  color: white;
+  width: 100%;
+  transition: background-position 0.5s ease-in-out;  
+} */
 /* **THIRD SLIDE */
 /* ABOUT ME SECTION */
 
