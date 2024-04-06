@@ -379,10 +379,10 @@ h3 {
 
 
 /* **MY WORKS SECTION */
-#myworks {
+/* #myworks {
   background-color: var(--clrblack);
-  outline: 2px solid rgb(55, 0, 255);
-}
+  outline: 2px solid rgb(255, 255, 255);
+} */
 .myworksHeaders {
   display: flex;
   justify-content: center;
@@ -391,32 +391,47 @@ h3 {
   width: 100%;
   gap: 3rem;
 }
-.myworksHeaders > h2 {
+
+.myworkslbl{
+  color: var(--clrblack);
+  font-size: 4rem;
+  transition: 0.5s ease-in-out;
+
+}
+.mwlbl2{
   color: var(--clryellow);
   font-size: 4rem;
+  transition: 0.5s ease-in-out;
 }
+
 .myworksHeaders > button{
   font-style: italic;
   font-weight: 500;
   cursor: pointer;
 }
 
-#webdevbtn{
-  background-color: transparent;
+.webdevbtn{
   color: var(--clryellow);
-}
-#gfxbtn{
-  background-color: var(--clryellow);
-  color: var(--clrblack);
+  background-color: var(--clrblack);
   padding: 0.2rem 1.8rem;
-  font-weight: 500;
-  font-style: italic;
   border-radius: 2rem;
 }
+
+.gfxbtn{
+  color: var(--clrblack);
+  background-color: var(--clryellow);
+  padding: 0.2rem 1.8rem;
+  border-radius: 2rem;
+}
+
 .myworksHolder{
   background-color: var(--clrblack);
   height: 42rem;
   outline: 2px solid rgb(30, 255, 0);
+  transition: 0.5s ease-in-out;
+}
+.mwholder{
+  background-color: var(--clryellow);
 }
 .myworks-container{
   outline: 2px solid rgb(55, 0, 255);
@@ -431,6 +446,7 @@ h3 {
 .webContentHolder{
   width: 100%;
 height: 30rem;
+display: none;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -458,6 +474,13 @@ color: rgb(255, 255, 255);
 .graphicContentHolder{
   display: none;
   width: 100%;
+  height: 30rem;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    text-align: center;
+    outline: 2px solid rgb(55, 0, 255);
 
 }
 
