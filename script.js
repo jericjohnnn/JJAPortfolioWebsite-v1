@@ -21,21 +21,18 @@ returnBack.addEventListener("click", () => {
   scroll_(200, 0);
 });
 
-
 function scroll_(firstValue, secondValue) {
   const slider = document.querySelector(".figure");
 
-    slider.animate([
-      { left: '-' + firstValue + '%' },  
-      { left: '-' + secondValue +'%' } 
-    ], {
-      duration: 750,  // Animation duration in milliseconds
-      easing: 'ease',  
+  slider.animate(
+    [{ left: "-" + firstValue + "%" }, { left: "-" + secondValue + "%" }],
+    {
+      duration: 750, // Animation duration in milliseconds
+      easing: "ease",
       fill: "forwards",
-    });
-   
+    }
+  );
 }
-
 
 const webdevbtn = document.querySelector(".webdevbtn");
 const gfxbtn = document.querySelector(".gfxbtn");
@@ -47,65 +44,27 @@ const myworksholder = document.querySelector(".myworksHolder");
 
 const myworkslbl = document.querySelector(".myworkslbl");
 
-const output = document.querySelector(".output");
-const mwbutton = document.querySelector(".mwbutton");
 
-let webstate = 1;
-let gfxstate = 0;
+// TODO WORK ON FUNCTION TO TURN TO BE CLICKABLE AND NOT CLICKABLE
 
-
-let activeBtn = gfxbtn; // Set gfxbtn as initially active
-
-function showContent(btn) {
-  if (btn === activeBtn) return; // Prevent clicking the same button
-
-  activeBtn.classList.remove("active");
-  btn.classList.add("active");
-
-  contentHolders.forEach(holder => holder.classList.remove("active"));
-  document.getElementById(btn.id + "holder").classList.add("active");
-
-  activeBtn = btn; // Update the activeBtn reference
-}
-
-
-
-
-
-function isActive(){
-  if (webstate == 1) {
-    webdevbtn.style.cursor = "default";
-    gfxbtn.onclick = function(){
+  gfxbtn.onclick = function () {
     gfxholder.style.display = "flex";
     webdevholder.style.display = "none";
     webdevbtn.classList.toggle("devbtn");
     gfxbtn.classList.toggle("gdbtn");
     myworksholder.classList.toggle("mwholder");
     myworkslbl.classList.toggle("mwlbl2");
-  
-    output.textContent = gfxstate;
-    gfxstate = 1;
-    webstate = 0;
-  }
-  }else if(gfxstate == 1){
-    gfxbtn.style.cursor = "default";
-  
-    webdevbtn.onclick = function(){
+  };
+
+  webdevbtn.onclick = function () {
     gfxholder.style.display = "none";
     webdevholder.style.display = "flex";
     webdevbtn.classList.toggle("devbtn");
     gfxbtn.classList.toggle("gdbtn");
     myworksholder.classList.toggle("mwholder");
     myworkslbl.classList.toggle("mwlbl2");
-    gfxstate = 0;
-    webstate = 1;
-  }
-  }
-}
 
-isActive();
-
-
+  };
 
 
 // webdevbtn.onclick = function(){
@@ -124,5 +83,3 @@ isActive();
 //   myworksholder.classList.toggle("mwholder");
 //   myworkslbl.classList.toggle("mwlbl2");
 // }
-
-
