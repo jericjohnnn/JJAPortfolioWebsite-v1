@@ -379,10 +379,7 @@ h3 {
 
 
 /* **MY WORKS SECTION */
-/* #myworks {
-  background-color: var(--clrblack);
-  outline: 2px solid rgb(255, 255, 255);
-} */
+
 .myworksHeaders {
   display: flex;
   justify-content: center;
