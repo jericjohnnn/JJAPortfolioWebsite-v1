@@ -34,15 +34,15 @@ function scroll_(firstValue, secondValue) {
   );
 }
 
-const webdevbtn = document.querySelector(".webdevbtn");
-const gfxbtn = document.querySelector(".gfxbtn");
+const webdevbtn = document.querySelector(".webdevbtn"); // webdev button
+const gfxbtn = document.querySelector(".gfxbtn"); //gfx button
 
-const gfxholder = document.querySelector(".graphicContentHolder");
-const webdevholder = document.querySelector(".webContentHolder");
+const gfxholder = document.querySelector(".graphicContentHolder"); // whole gfx container
+const webdevholder = document.querySelector(".webContentHolder"); // whole webdev holder
 
-const myworksholder = document.querySelector(".myworksHolder");
+const myworksholder = document.querySelector(".myworksHolder"); // whole gfx and webdev holder combined
 
-const myworkslbl = document.querySelector(".myworkslbl");
+const myworkslbl = document.querySelector(".myworkslbl"); // myworks h2 label
 
 
 // TODO WORK ON FUNCTION TO TURN TO BE CLICKABLE AND NOT CLICKABLE
