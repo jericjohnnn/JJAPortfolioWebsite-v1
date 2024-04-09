@@ -88,3 +88,30 @@ function removelistener() {
 removelistener();
 
 
+// TODO: FIND A WAY TO MAKE THE IMAGE GALLERY SELCTION MINIMAL
+
+const openimg = document.querySelector(".openimg");
+
+const imgone = document.querySelector(".img-one");
+// const closeModal = document.querySelector(".close-button");
+
+
+openimg.onclick = function () {
+  imgone.showModal();
+};
+opentwo.onclick = function () {
+  imgtwo.showModal();
+};
+openthree.onclick = function () {
+  imgthree.showModal();
+};
+openfour.onclick = function () {
+  imgfour.showModal();
+};
+
+
+
+// openone.addEventListener("click", () => {
+//   modal.showModal();
+// });
+
