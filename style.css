@@ -493,12 +493,26 @@ color: rgb(255, 255, 255);
   height: auto;
   transition: 0.2s ease-in-out;
   filter: grayscale(100%);  
+  cursor: pointer;
 }
 .col img:hover{
   transform: scale(1.05);
   filter: grayscale(0%);  
 }
+.modal{
+  align-self: center;
+  justify-self: center;
+}
+.modal::backdrop{
+  background-color: black;
+  opacity: 35%;
+}
 
 
+
+dialog img{
+  height: 500px;
+  width: auto;
+}
 
 /* MY WORKS SECTION */
