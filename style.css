@@ -478,7 +478,25 @@ color: rgb(255, 255, 255);
     font-size: 1.4rem;
     text-align: center;
     outline: 2px solid rgb(55, 0, 255);
-
+}
+.gallery{
+  display: flex;
+  gap: 6px;
+}
+.col{
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+}
+.col img{
+  width: 135px;
+  height: auto;
+  transition: 0.2s ease-in-out;
+  filter: grayscale(100%);  
+}
+.col img:hover{
+  transform: scale(1.05);
+  filter: grayscale(0%);  
 }
 
 
