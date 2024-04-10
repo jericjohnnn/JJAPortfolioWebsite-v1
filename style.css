@@ -533,3 +533,67 @@ color: rgb(255, 255, 255);
 }
 
 /* MY WORKS SECTION */
+
+/* CONTACT SECTION */
+#contact {
+  background-image: url(/assets/contact-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 28rem;
+  gap: 85px;
+}
+.contact-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.contact-text h3{
+  font-size: 2.8rem;
+}
+.contact-btn{
+  font-weight: 700;
+  padding: 0.6rem 3.1rem;
+}
+.icons a{
+  margin: 0 0.3rem;
+}
+.icons img{
+  width: 2.5rem;
+  height: auto;
+
+}
+/* CONTACT SECTION */
+
+/* FOOTER SECTION */
+footer{
+  background-color: var(--clrblack);
+}
+.footer-container{
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #858585;
+
+}
+.footer-container p{
+  font-weight: 300;
+}
+.contact-info{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.text-infos{
+  text-align: right;
+  line-height: 30px;
+}
