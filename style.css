@@ -597,6 +597,10 @@ color: rgb(255, 255, 255);
 .icons img:hover{
   transform: scale(1.05);
 }
+.github_icon{
+  width: 2.7rem !important;
+  height: auto;
+}
 /* CONTACT SECTION */
 
 /* FOOTER SECTION */
