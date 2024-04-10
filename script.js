@@ -44,14 +44,12 @@ const myworksholder = document.querySelector(".myworksHolder"); // whole gfx and
 
 const myworkslbl = document.querySelector(".myworkslbl"); // myworks h2 label
 
-let webdev = 1;
-let gfx = 0;
+let webdev = 0;
+let gfx = 1;
 
 function opengfx() {
   gfxholder.style.display = "flex";
   webdevholder.style.display = "none";
-  webdevbtn.classList.toggle("devbtn");
-  gfxbtn.classList.toggle("gdbtn");
   myworksholder.classList.toggle("mwholder");
   myworkslbl.classList.toggle("mwlbl2");
   webdev = 0;
@@ -62,8 +60,6 @@ function opengfx() {
 function openwebdev() {
   gfxholder.style.display = "none";
   webdevholder.style.display = "flex";
-  webdevbtn.classList.toggle("devbtn");
-  gfxbtn.classList.toggle("gdbtn");
   myworksholder.classList.toggle("mwholder");
   myworkslbl.classList.toggle("mwlbl2");
   webdev = 1;
