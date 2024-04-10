@@ -47,28 +47,28 @@ const myworkslbl = document.querySelector(".myworkslbl"); // myworks h2 label
 let webdev = 1;
 let gfx = 0;
 
-function opengfx(){
+function opengfx() {
   gfxholder.style.display = "flex";
-    webdevholder.style.display = "none";
-    webdevbtn.classList.toggle("devbtn");
-    gfxbtn.classList.toggle("gdbtn");
-    myworksholder.classList.toggle("mwholder");
-    myworkslbl.classList.toggle("mwlbl2");
-    webdev = 0;
-    gfx = 1;
-    removelistener();
+  webdevholder.style.display = "none";
+  webdevbtn.classList.toggle("devbtn");
+  gfxbtn.classList.toggle("gdbtn");
+  myworksholder.classList.toggle("mwholder");
+  myworkslbl.classList.toggle("mwlbl2");
+  webdev = 0;
+  gfx = 1;
+  removelistener();
 }
 
-function openwebdev(){
+function openwebdev() {
   gfxholder.style.display = "none";
-    webdevholder.style.display = "flex";
-    webdevbtn.classList.toggle("devbtn");
-    gfxbtn.classList.toggle("gdbtn");
-    myworksholder.classList.toggle("mwholder");
-    myworkslbl.classList.toggle("mwlbl2");
-    webdev = 1;
-    gfx = 0;
-    removelistener();
+  webdevholder.style.display = "flex";
+  webdevbtn.classList.toggle("devbtn");
+  gfxbtn.classList.toggle("gdbtn");
+  myworksholder.classList.toggle("mwholder");
+  myworkslbl.classList.toggle("mwlbl2");
+  webdev = 1;
+  gfx = 0;
+  removelistener();
 }
 
 function removelistener() {
@@ -77,7 +77,7 @@ function removelistener() {
     gfxbtn.addEventListener("click", opengfx);
     webdevbtn.style.cursor = "default";
     gfxbtn.style.cursor = "pointer";
-  }else if(gfx == 1){
+  } else if (gfx == 1) {
     gfxbtn.removeEventListener("click", opengfx);
     webdevbtn.addEventListener("click", openwebdev);
     gfxbtn.style.cursor = "default";
@@ -88,30 +88,14 @@ function removelistener() {
 removelistener();
 
 
-// TODO: FIND A WAY TO MAKE THE IMAGE GALLERY SELCTION MINIMAL
-
-const openimg = document.querySelector(".openimg");
-
-const imgone = document.querySelector(".img-one");
-// const closeModal = document.querySelector(".close-button");
-
-
-openimg.onclick = function () {
-  imgone.showModal();
-};
-opentwo.onclick = function () {
-  imgtwo.showModal();
-};
-openthree.onclick = function () {
-  imgthree.showModal();
-};
-openfour.onclick = function () {
-  imgfour.showModal();
-};
-
-
-
-// openone.addEventListener("click", () => {
-//   modal.showModal();
-// });
-
+document.querySelectorAll(".gallery img").forEach((openimg) => {
+  openimg.onclick = () => {
+    document.querySelector(".imgmodal").style.display = 'block';
+    document.querySelector(".imgmodal span").style.display = 'block';
+    document.querySelector(".imgmodal img").src = openimg.getAttribute("src");
+  }
+});
+document.querySelector(".imgmodal span").onclick = () => {
+  document.querySelector(".imgmodal").style.display = 'none';
+  document.querySelector(".imgmodal span").style.display = 'none';
+}
