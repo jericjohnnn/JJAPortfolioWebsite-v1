@@ -576,6 +576,7 @@ color: rgb(255, 255, 255);
 /* FOOTER SECTION */
 footer{
   background-color: var(--clrblack);
+  position: relative;
 }
 .footer-container{
   height: 7rem;
@@ -596,4 +597,10 @@ footer{
 .text-infos{
   text-align: right;
   line-height: 30px;
+}
+.arrow-up{
+  position: absolute;
+  top: -1.8rem;
+  left: 7rem;
+  z-index: 100;
 }
