@@ -95,3 +95,25 @@ document.querySelector(".imgmodal span").onclick = () => {
   document.querySelector(".imgmodal").style.display = 'none';
   document.querySelector(".imgmodal span").style.display = 'none';
 }
+
+
+
+list = document.querySelector(".list");
+closebtn = document.querySelector(".closebtn");
+menu = document.querySelector(".menu");
+
+let menustate = 0;
+
+function closemenu(menustate){
+  if (menustate == 0) {
+    list.style.width = "0%";
+  }else if(menustate == 1){
+    list.style.width = "40%";
+  }
+}
+
+
+menu.addEventListener("click", () => {
+  closemenu()
+});
+
