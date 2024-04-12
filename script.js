@@ -101,19 +101,26 @@ document.querySelector(".imgmodal span").onclick = () => {
 list = document.querySelector(".list");
 closebtn = document.querySelector(".closebtn");
 menu = document.querySelector(".menu");
+list_item = document.querySelectorAll(".item");
 
-let menustate = 0;
+// let menustate = 0;
 
-function closemenu(menustate){
-  if (menustate == 0) {
-    list.style.width = "0%";
-  }else if(menustate == 1){
-    list.style.width = "40%";
-  }
-}
-
+// function closemenu(menustate){
+//   if (menustate == 0) {
+//     list.style.width = "0%";
+//   }else if(menustate == 1){
+//     list.style.width = "40%";
+//   }
+// }
 
 menu.addEventListener("click", () => {
-  closemenu()
+  list.style.right = "0";
 });
 
+closebtn.addEventListener("click", () => {
+  list.style.right = "-100%";
+});
+
+list_item.addEventListener("click", () => {
+  list.style.right = "-100%";
+});

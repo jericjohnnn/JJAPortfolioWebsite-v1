@@ -77,6 +77,9 @@ h3 {
 .closebtn{
   display: none;
 }
+.menu{
+  display: none;
+}
 .nav-container {
   height: 5rem;
   display: flex;
@@ -710,16 +713,20 @@ footer{
 
 @media(max-width: 768px){
   .menu{
+    display: block;
     color: white;
     z-index: 100;
     width: 2.5rem;
-  }
-  .nav-container{
-    outline: 2px solid red;
+    cursor: pointer;
   }
   .closebtn{
     display: block;
     font-size: 2.6rem;
+    cursor: pointer;
+  }
+  .closebtn:hover,
+  .list a:hover{
+    background-color: var(--clryellow);
   }
   .list{
     outline: 2px solid rgb(21, 226, 21);
@@ -727,12 +734,15 @@ footer{
     flex-direction: column;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     height: 100%;
     background-color: var(--clrwhite);
     z-index: 900;
-    /* width: 0%; */
-    transition: 0.2s ease-in-out;
+    width: 40%;
+    transition: 0.5s ease-out;
+  }
+  .list a:hover::after{
+    width: 0%;
   }
   /* .open-list{
     outline: 2px solid rgb(21, 226, 21);
