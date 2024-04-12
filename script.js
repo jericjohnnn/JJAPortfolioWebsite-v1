@@ -101,18 +101,13 @@ document.querySelector(".imgmodal span").onclick = () => {
 list = document.querySelector(".list");
 closebtn = document.querySelector(".closebtn");
 menu = document.querySelector(".menu");
-list_item = document.querySelectorAll(".item");
+list_item = document.querySelectorAll(".list a");
 
-// let menustate = 0;
-
-// function closemenu(menustate){
-//   if (menustate == 0) {
-//     list.style.width = "0%";
-//   }else if(menustate == 1){
-//     list.style.width = "40%";
-//   }
-// }
-
+list_item.forEach((item) => {
+  item.onclick = () => {
+    list.style.right = "-100%";
+  }
+});
 menu.addEventListener("click", () => {
   list.style.right = "0";
 });
@@ -121,6 +116,3 @@ closebtn.addEventListener("click", () => {
   list.style.right = "-100%";
 });
 
-list_item.addEventListener("click", () => {
-  list.style.right = "-100%";
-});
