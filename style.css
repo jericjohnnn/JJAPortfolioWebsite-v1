@@ -643,6 +643,10 @@ footer {
 
 /* **1280 PX */
 @media (max-width: 1280px) {
+  .container {
+    /* width: 83%; */
+    width: 60rem;
+  }
   .hero-text {
     line-height: 3.8rem;
   }
