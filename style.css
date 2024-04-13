@@ -28,10 +28,11 @@ h3 {
   font-weight: 700;
 }
 .container {
-  width: 83%;
-  /* width: 70rem; */
+  /* width: 83%; */
+  width: 70rem;
   margin: 0 auto;
   position: relative;
+  outline: 2px solid red;
 }
 .button-one {
   background-color: var(--clryellow);
@@ -303,8 +304,10 @@ h3 {
 .heading-three {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  gap: 42.3rem;
+  justify-content: center;
   align-items: center;
+  z-index: 100;
 }
 .heading-three > h2 {
   font-size: 4rem;
@@ -335,7 +338,8 @@ h3 {
 }
 .bg-images {
   display: flex;
-  width: 100%;
+  width: 70rem;
+  /* width: 100%; */
   position: absolute;
   justify-content: space-between;
   align-items: end;
