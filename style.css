@@ -535,8 +535,11 @@ h3 {
 .imgmodal {
   display: none;
   position: absolute;
-  align-self: center;
-  justify-self: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  z-index: 999;
+
 }
 
 .imgmodal img::backdrop {
@@ -544,31 +547,23 @@ h3 {
 }
 
 .container .imgmodal img {
-  height: 500px;
-  width: auto;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  /* height: auto;
+  width: auto; */
   object-fit: cover;
   filter: drop-shadow(0px 0px 70rem rgba(0, 0, 0, 1));
 }
-/* #img1, #img5, #img6, #img7,
-#img9, #img9, #img10, #img11,
-#img14{
-  height: 500px;
-  width: auto;
-}
-#img2, #img3, #img13{
-
-}
-#img4, #img8, #img12{
-
-} */
 
 .container .imgmodal span {
-  font-size: 5rem;
+  font-size: 8rem;
   position: absolute;
   color: rgb(255, 255, 255);
   z-index: 100;
-  left: -5rem;
-  top: -1rem;
+  right: 7%;
+  top: 10%;
   filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.3));
   cursor: pointer;
 }

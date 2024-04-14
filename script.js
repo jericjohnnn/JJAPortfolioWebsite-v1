@@ -83,14 +83,27 @@ function removelistener() {
 
 removelistener();
 
+const modalimg = document.querySelector(".imgmodal img");
 
 document.querySelectorAll(".gallery img").forEach((openimg) => {
   openimg.onclick = () => {
     
-    document.querySelector(".imgmodal img").src = openimg.getAttribute("src");
+    modalimg.src = openimg.getAttribute("src");
 
-    document.querySelector(".imgmodal").style.display = 'block';
-    document.querySelector(".imgmodal span").style.display = 'block';
+    if (openimg.id == "img1" || openimg.id == "img5" || openimg.id == "img6" || openimg.id == "img7" || openimg.id == "img9"
+    || openimg.id == "img10" || openimg.id == "img11" || openimg.id == "img14") {
+      modalimg.style.height = "85%";
+      modalimg.style.width = "fit-content";
+    } else if(openimg.id == "img4" || openimg.id == "img8" || openimg.id == "img12"){
+      modalimg.style.height = "auto";
+      modalimg.style.width = "69%";
+    }else{
+      modalimg.style.height = "73%";
+      modalimg.style.width = "auto";
+    }
+
+    document.querySelector(".imgmodal").style.display = 'flex';
+    document.querySelector(".imgmodal span").style.display = 'flex';
   }
 });
 document.querySelector(".imgmodal span").onclick = () => {
