@@ -86,9 +86,11 @@ removelistener();
 
 document.querySelectorAll(".gallery img").forEach((openimg) => {
   openimg.onclick = () => {
+    
+    document.querySelector(".imgmodal img").src = openimg.getAttribute("src");
+
     document.querySelector(".imgmodal").style.display = 'block';
     document.querySelector(".imgmodal span").style.display = 'block';
-    document.querySelector(".imgmodal img").src = openimg.getAttribute("src");
   }
 });
 document.querySelector(".imgmodal span").onclick = () => {
