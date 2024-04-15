@@ -32,7 +32,6 @@ h3 {
   width: 70rem;
   margin: 0 auto;
   position: relative;
-  outline: 2px solid red;
 }
 .button-one {
   background-color: var(--clryellow);
@@ -744,9 +743,7 @@ footer {
   .hero-text p {
     font-size: 1rem;
   }
-  .holder-one {
-    outline: 2px solid red;
-  }
+
   .box > .boxShadow {
     width: 19rem;
     height: 19rem;
