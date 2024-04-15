@@ -575,7 +575,7 @@ h3 {
 
 /* CONTACT SECTION */
 #contact {
-  background-image: url(/assets/contact-background.png);
+  background-image: url(assets/contact-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
