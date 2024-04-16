@@ -32,6 +32,7 @@ h3 {
   width: 70rem;
   margin: 0 auto;
   position: relative;
+  /* outline: 2px solid red; */
 }
 .button-one {
   background-color: var(--clryellow);
@@ -513,7 +514,7 @@ h3 {
   padding: 0;
   margin: 0;
 }
-.col a{
+.col a {
   line-height: 0;
 }
 .col {
@@ -541,7 +542,6 @@ h3 {
   height: 100%;
   justify-content: center;
   z-index: 999;
-
 }
 
 .imgmodal img::backdrop {
@@ -814,7 +814,7 @@ footer {
     color: var(--clrblack);
   }
 
-/* MYWORKS */
+  /* MYWORKS */
   .myworksHeaders {
     gap: 1.5rem;
   }
@@ -847,25 +847,23 @@ footer {
     font-weight: 300;
     font-size: 0.83rem;
   }
-
 }
 
-
 /* **768 PX */
-@media(max-width: 768px){
-  .menu{
+@media (max-width: 768px) {
+  .menu {
     display: block;
     color: white;
     z-index: 100;
     width: 2.5rem;
     cursor: pointer;
   }
-  .closebtn{
+  .closebtn {
     display: block;
     font-size: 2.6rem;
     cursor: pointer;
   }
-  .list{
+  .list {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -877,7 +875,7 @@ footer {
     width: 40%;
     transition: 0.5s ease-out;
   }
-  .list a{
+  .list a {
     margin: 0;
     color: var(--clrblack);
     text-align: center;
@@ -889,9 +887,8 @@ footer {
   }
 }
 
-
 /* **700 PX */
-@media(max-width: 700px){
+@media (max-width: 700px) {
   .hero-image img {
     width: 18rem;
   }
@@ -921,12 +918,10 @@ footer {
     padding: 1.4rem 0;
   }
 
-
-
   .heading-three > h2 {
     font-size: 2.8rem;
   }
- 
+
   .web-dev h3 {
     font-size: 1.3rem;
     line-height: 4rem;
@@ -947,7 +942,7 @@ footer {
     font-size: 0.9rem;
   }
 
-/* MYWORKS */
+  /* MYWORKS */
 
   .myworkslbl {
     font-size: 2.63rem;
@@ -964,7 +959,6 @@ footer {
     font-size: 0.78rem;
   }
 
-
   .contact-container {
     gap: 50px;
   }
@@ -973,7 +967,6 @@ footer {
     font-weight: 300;
     font-size: 0.83rem;
   } */
-
 
   .gallery {
     gap: 5px;
@@ -986,7 +979,6 @@ footer {
     height: auto;
     transition: 0.2s ease-in-out;
   }
-
 
   /* .container .imgmodal img {
     height: 20rem;
@@ -1003,14 +995,10 @@ footer {
   .footer-container p {
     font-size: 0.78rem;
   }
-
-
 }
 
-
-
 /* **642 PX */
-@media(max-width: 640px){
+@media (max-width: 640px) {
   .myworkslbl {
     font-size: 2.5rem;
     transition: 0.5s ease-in-out;
@@ -1027,9 +1015,8 @@ footer {
   }
 }
 
-
 /* **500 PX */
-@media(max-width: 500px){
+@media (max-width: 500px) {
   .container {
     width: 95%;
   }
@@ -1040,9 +1027,9 @@ footer {
     width: 2.8rem;
     height: auto;
   }
-  
+
   .hero-container {
-    height: 100dvh;
+    height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1065,11 +1052,9 @@ footer {
     width: 24rem;
     height: auto;
   }
-  
-
 
   .slideHolder {
-    height: 90dvh;
+    height: 90vh;
   }
 
   .holder-one {
@@ -1088,7 +1073,6 @@ footer {
     margin: 0;
   }
 
-
   .text {
     width: 25rem;
     font-size: 1.1rem;
@@ -1102,8 +1086,7 @@ footer {
     text-align: justify;
   }
 
-
-  .holder-two{
+  .holder-two {
     gap: 5rem;
   }
   .button-two {
@@ -1129,10 +1112,7 @@ footer {
   .description-two img {
     width: 50%;
     height: auto;
-  } 
-
-
-
+  }
 
   .holder-three {
     transform: translateY(-6.5rem);
@@ -1180,83 +1160,75 @@ footer {
     font-size: 1.1rem;
   }
 
-  
+  .myworksHeaders {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    position: absolute;
+    top: 15rem;
+  }
 
+  .webdevbtn {
+    padding: 0.2rem 1.8rem;
+  }
 
-  
-.myworksHeaders {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0;
-  position: absolute;
-  top: 15rem;
-}
+  .gfxbtn {
+    padding: 0.2rem 1.8rem;
+  }
 
+  .myworksHolder {
+    height: 90vh;
+  }
 
+  .myworks-container {
+    gap: 2.2rem;
+  }
 
-.webdevbtn {
-  padding: 0.2rem 1.8rem;
-}
+  /* GFX PAGE */
+  .graphicContentHolder {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    left: -200%;
+  }
+  .gallery {
+    display: flex;
+    gap: 6px;
+    padding: 0;
+    margin: 0;
+    overflow: scroll;
+    scrollbar-width: none;
+  }
+  .col {
+    display: flex;
+    gap: 6px;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+  .col img {
+    width: auto;
+    height: 17rem;
+    transition: 0.2s ease-in-out;
+    filter: grayscale(100%);
+    cursor: pointer;
+  }
+  .contact-text h3 {
+    font-size: 2rem;
+  }
 
-.gfxbtn {
-  padding: 0.2rem 1.8rem;
-}
-
-.myworksHolder {
-  height: 90dvh;
-}
-
-.myworks-container {
-
-  gap: 2.2rem;
-}
-
-
-/* GFX PAGE */
-.graphicContentHolder {
-  display: block;
-  width: 100%;
-  height: fit-content;
-  left: -200%;
-}
-.gallery {
-  display: flex;
-  gap: 6px;
-  padding: 0;
-  margin: 0;
-  overflow: scroll;
-  scrollbar-width: none;
-}
-.col {
-  display: flex;
-  gap: 6px;
-  flex-direction: row;
-  padding: 0;
-  margin: 0;
-}
- .col img {
-  width: auto;
-  height: 17rem;
-  transition: 0.2s ease-in-out;
-  filter: grayscale(100%);
-  cursor: pointer;
-}
-.contact-text h3 {
-  font-size: 2rem;
-}
-
-.footer-container p {
-  font-size: 0.6rem;
-}
-.arrow-up {
-  left: 2rem;
-  z-index: 100;
-}
-.contact-info {
-  gap: 10px;
-}
-/* .container .imgmodal img {
+  .footer-container p {
+    font-size: 0.6rem;
+  }
+  .arrow-up {
+    left: 2rem;
+    z-index: 100;
+  }
+  .contact-info {
+    gap: 10px;
+  }
+  /* .container .imgmodal img {
   height: 500px;
   width: auto;
   object-fit: cover;
@@ -1272,15 +1244,11 @@ footer {
   filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.3));
   cursor: pointer;
 } */
-
 }
 
-
-
 /* **430 PX */
-@media(max-width: 430px){
-  
-  .holder-two{
+@media (max-width: 430px) {
+  .holder-two {
     gap: 4rem;
   }
   .button-two {
@@ -1291,7 +1259,6 @@ footer {
   .heading-two > h2 {
     font-size: 1.9rem;
   }
- 
 
   .myworksHeaders {
     top: 6.5rem;
@@ -1300,7 +1267,7 @@ footer {
   .contact-text h3 {
     font-size: 1.7rem;
   }
-  
+
   .footer-container p {
     font-size: 0.54rem;
   }
@@ -1309,21 +1276,18 @@ footer {
   }
 }
 
-
 /* **375 PX */
-@media(max-width: 375px){
-  
+@media (max-width: 375px) {
   .hero-container {
-    height: 80dvh;
-
+    height: 100vh;
   }
   .hero-text {
     width: 100%;
     line-height: 3rem;
   }
   .hero-text h1 {
-    line-height: 4.7rem;
-    font-size: 3rem;
+    line-height: 4rem;
+    font-size: 2.8rem;
     font-weight: 700;
   }
   .hero-text p {
@@ -1333,38 +1297,209 @@ footer {
     width: 20rem;
     height: auto;
   }
-  
 
-  
   .slideHolder {
-    height: 80dvh;
+    display: flex;
+    height: 100vh;
+    float: none;
+    width: 375px;
+  }
+
+  .holder-two {
+    gap: 35px;
   }
 
 
-  .text {
+  .box > .boxShadow {
+    width: 18rem;
+    height: 18rem;
+    margin: 0;
+  }
+  .box-shape {
+    width: 18rem;
+    height: 18rem;
+    margin: 0;
+  }
+
+
+  .one{
+    height: 85vh;
+  }
+  .text{
     width: 100%;
-    font-size: 1rem;
     padding: 0;
   }
-  .text > h2 {
-    font-size: 3.7rem;
+  .text>h2{
+    font-size: 3rem;
   }
-  .text > p {
-    padding: 2.5rem 0;
-    text-align: justify;
+  .text p{
+    padding: 2rem 0.5rem;
+  }
+  #showMore {
+    display: none;
+  }
+  #mySkills {
+    display: none;
+  }
+  #returnBack{
+    display: none;
   }
 
-  .myworksHolder {
-    height: 70dvh;
+  .heading-two {
+    z-index: 100;
+    justify-content: center;
+  }
+  .heading-two>h2{
+    font-size: 2.2rem;
+  }
+  .description-two{
+    gap: 1rem;
+  }
+  .description-two .paragraph {
+    font-size: 0.3rem;
+    padding: 0 0.5rem;
+    line-height: 1.6rem;
+  }
+  .paragraph p{
+    font-size: 0.6rem;
+  }
+
+  
+
+  .holder-three {
+    transform: translateY(-1rem);
+    /* transform: none; */
+    gap: 2rem;
+  }
+
+  .heading-three{
+    transform: translateY(-4rem);
+    justify-content: center;
+  }
+  .description-three {
+    transform: translateY(-4rem);
+    gap: 1.7rem;
+  }
+
+  .web-dev h3 {
+    font-size: 1.45rem;
+    line-height: 2.5rem;
+  }
+
+  .gfx-design {
+    text-align: center;
+  }
+  .gfx-design h3 {
+    font-size: 1.45rem;
+    line-height: 3rem;
+  }
+
+  .bg-images {
+    width: 100%;
+    transform: none;
+  }
+  .webImg {
+    width: 45%;
+    height: auto;
+  }
+  .mobileImg {
+    width: 38%;
+    height: auto;
+  }
+  .skill-icon {
+    padding: 0.3rem 1.8rem;
+    font-size: 0.8rem;
+  }
+
+
+
+  #html{
+    background-color: #ed4c24;
+    transition: 0.25s;
+    color: white;
+  }
+  #css{
+    background-color: #1958e0;
+    transition: 0.25s;
+    color: white;
+  }
+  #javascript{
+    background-color: hsl(51, 91%, 54%);
+    transition: 0.25s;
+    color: white;
+  }
+  #php{
+    background-color: #7980b5;
+    transition: 0.25s;
+    color: white;
+  }
+  #mysql{
+    background: linear-gradient(90deg, #00638a 50%, #eb8e15 50%);
+    transition: 0.25s;
+    color: white;
+  }
+  #figma{
+    background: url(assets/figmacolor.png);
+    transition: 0.25s;
+    color: white;
+  }
+  #adobexd{
+    background-color: #4f0b3c;
+    transition: 0.25s;
+    color: white;
+  }
+  #photoshop{
+    background-color: #08263b;
+    transition: 0.25s;
+    color: white;
+  }
+  #canva{
+    background: linear-gradient(90deg, #08c5cf 0%, #7a3bed 100%);
+    transition: 0.25s;
+    color: white;
+  }
+
+
+  .myworks-container {
+    gap: 2.2rem;
+  }
+
+  .myworksHeaders{
+    top: 5rem;
+  }
+
+  .graphicContentHolder{
+    transform: translateY(4rem);
+  }
+  .webContentHolder h1{
+    font-size: 1.5rem;
+    transform: translateY(3rem);
+  }
+
+
+  .col img {
+    width: auto;
+    height: 16rem;
   }
   .contact-text h3 {
-    font-size: 1.47rem;
-  }
-  
-  .footer-container p {
-    font-size: 0.48rem;
-    line-height: 18px;
+    font-size: 1.45rem;
   }
 
+  .contact-info a img{
+    width: 44.8px;
+    height: auto;
+  }
+  .arrow-up{
+    width: 53px;
+    height: auto;
+    top: -1.5rem;
+  }
+  .footer-container p {
+    font-size: 0.5rem;
+    line-height: 1rem;
+  }
+
+  .contact-info {
+    gap: 7px;
+  }
 }
-  
