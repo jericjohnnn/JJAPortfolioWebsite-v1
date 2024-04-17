@@ -980,18 +980,6 @@ footer {
     transition: 0.2s ease-in-out;
   }
 
-  /* .container .imgmodal img {
-    height: 20rem;
-    width: auto;
-    filter: drop-shadow(0px 0px 70rem rgba(0, 0, 0, 1));
-  }
-  .container .imgmodal span {
-    font-size: 5rem;
-    left: -3rem;
-    top: -1rem;
-    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.3));
-  } */
-
   .footer-container p {
     font-size: 0.78rem;
   }
