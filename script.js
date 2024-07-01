@@ -131,3 +131,9 @@ closebtn.addEventListener("click", () => {
   list.style.right = "-100%";
 });
 
+
+const contact_btn = document.querySelector(".contact-btn");
+
+contact_btn.addEventListener("click", function() {
+  alert("CTA still in the works, you can try to contact me through my socials, email or number :)");
+});
