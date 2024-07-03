@@ -137,3 +137,12 @@ const contact_btn = document.querySelector(".contact-btn");
 contact_btn.addEventListener("click", function() {
   alert("CTA still in the works, you can try to contact me through my socials, email or number :D");
 });
+
+
+function scrolldiv(Section) {
+  var section = document.getElementById(Section);
+  section.scrollIntoView({
+      behavior: 'smooth'
+  });
+}
+

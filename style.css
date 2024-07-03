@@ -85,19 +85,34 @@ h3 {
   align-items: center;
   justify-content: space-between;
 }
-.logo a img {
+.logo button{
+  background-color: transparent;
+}
+.logo button img {
+  cursor: pointer;
   width: 3.5rem;
   height: auto;
 }
-.list a {
+.item{
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--clrwhite);
+  padding: 0 7px;
+  position: relative;
+}
+/* .list a {
   font-weight: 500;
   margin-left: 5rem;
   text-decoration: none;
   color: var(--clrwhite);
   padding: 0 7px;
   position: relative;
-}
-.list a::after {
+} */
+.item::after {
   content: "";
   position: absolute;
   background-color: var(--clryellow);
@@ -108,7 +123,7 @@ h3 {
   transition: 0.2s ease-in-out;
   border-radius: 10px;
 }
-.list a:hover::after {
+.item:hover::after {
   width: 100%;
 }
 
@@ -142,6 +157,10 @@ h3 {
   justify-content: center;
   align-items: center;
   padding-bottom: 3rem;
+}
+.arrow-down button{
+  cursor: pointer;
+  background-color: transparent;
 }
 .arrow-down {
   transition: 0.2s ease-in-out;
@@ -637,9 +656,17 @@ footer {
   align-items: center;
   gap: 30px;
 }
+.contact-info button{
+  background-color: transparent;
+  cursor: pointer;
+}
 .text-infos {
   text-align: right;
   line-height: 30px;
+}
+.arwu{
+  background-color: transparent;
+  cursor: pointer;
 }
 .arrow-up {
   position: absolute;
@@ -875,7 +902,7 @@ footer {
     width: 40%;
     transition: 0.5s ease-out;
   }
-  .list a {
+  .item {
     margin: 0;
     color: var(--clrblack);
     text-align: center;
@@ -1011,7 +1038,7 @@ footer {
   .nav-container {
     height: 4rem;
   }
-  .logo a img {
+  .logo button img {
     width: 2.8rem;
     height: auto;
   }
