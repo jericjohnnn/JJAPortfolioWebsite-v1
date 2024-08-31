@@ -385,7 +385,7 @@ h3 {
   color: var(--clrblack);
 }
 #html:hover {
-  background-color: #ed4c24;
+  background-color: #f06529;
   transition: 0.25s;
   color: white;
 }
@@ -406,6 +406,16 @@ h3 {
 }
 #mysql:hover {
   background: linear-gradient(90deg, #00638a 50%, #eb8e15 50%);
+  transition: 0.25s;
+  color: white;
+}
+#laravel:hover {
+  background-color: #f05340;
+  transition: 0.25s;
+  color: white;
+}
+#vuejs:hover {
+  background-color: #41b883;
   transition: 0.25s;
   color: white;
 }
