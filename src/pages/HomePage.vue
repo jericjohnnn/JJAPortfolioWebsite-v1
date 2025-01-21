@@ -5,6 +5,7 @@
     <GetToKnowMe />
     <MySkills />
     <MyWorks />
+    <ContactMe />
   </div>
 </template>
 <script setup>
@@ -13,4 +14,5 @@ import HeroBanner from '@/components/HeroBanner.vue'
 import GetToKnowMe from '@/components/GetToKnowMe.vue'
 import MySkills from '@/components/MySkills.vue'
 import MyWorks from '@/components/MyWorks.vue'
+import ContactMe from '@/components/ContactMe.vue'
 </script>
