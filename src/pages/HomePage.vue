@@ -6,6 +6,7 @@
     <MySkills />
     <MyWorks />
     <ContactMe />
+    <FooterSection />
   </div>
 </template>
 <script setup>
@@ -15,4 +16,5 @@ import GetToKnowMe from '@/components/GetToKnowMe.vue'
 import MySkills from '@/components/MySkills.vue'
 import MyWorks from '@/components/MyWorks.vue'
 import ContactMe from '@/components/ContactMe.vue'
+import FooterSection from '@/components/FooterSection.vue'
 </script>
