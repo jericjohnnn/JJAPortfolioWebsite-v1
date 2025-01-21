@@ -3,7 +3,7 @@
     <img
       src="@/assets/hero_bg.svg"
       alt="Hero Background"
-      class="absolute w-full h-full -z-10 object-cover"
+      class="absolute w-full h-full -z-10 object-cover object-left"
     />
     <div class="container mx-auto p-4">
       <NavBar />

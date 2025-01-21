@@ -1,6 +1,6 @@
 <template>
   <div class="bg-black container mx-auto px-4 py-14 text-white">
-    <h2 class="text-4xl font-bold mb-16 mt-8 text-center text-yellow">MY SKILLS</h2>
+    <h2 class="text-4xl font-bold mb-16 text-center text-yellow">MY SKILLS</h2>
 
     <div class="space-y-16 mb-8">
       <div class="text-center">
