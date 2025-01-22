@@ -1,12 +1,12 @@
 <template>
   <div>
-    <HeroBanner />
+    <HeroBanner id="hero" @selectedSection="scrollToSection" />
     <!-- <AboutMe /> -->
-    <GetToKnowMe />
+    <GetToKnowMe id="about" />
     <MySkills />
-    <MyWorks />
-    <ContactMe />
-    <FooterSection />
+    <MyWorks id="works" />
+    <ContactMe id="contact" />
+    <FooterSection @selectedSection="scrollToSection" />
   </div>
 </template>
 <script setup>
@@ -17,4 +17,9 @@ import MySkills from '@/components/MySkills.vue'
 import MyWorks from '@/components/MyWorks.vue'
 import ContactMe from '@/components/ContactMe.vue'
 import FooterSection from '@/components/FooterSection.vue'
+
+const scrollToSection = (section) => {
+  const componentSection = document.getElementById(section)
+  componentSection.scrollIntoView({ behavior: 'smooth' })
+}
 </script>
