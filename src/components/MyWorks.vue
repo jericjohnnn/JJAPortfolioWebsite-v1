@@ -5,11 +5,11 @@
       isOnDevView ? 'bg-black' : 'bg-yellow',
     ]"
   >
-    <div class="container mx-auto px-4 py-14 min-h-screen place-content-center relative">
+    <div class="container mx-auto px-4 py-14 min-h-screen place-content-center place-items-center relative">
       <div class="flex flex-col items-center mb-8">
         <h2
           :class="[
-            'text-4xl font-bold text-center transition-colors duration-300 absolute top-14',
+            'text-4xl md:text-5xl font-bold text-center transition-colors duration-300 absolute top-14',
             isOnDevView ? 'text-yellow' : 'text-black',
           ]"
         >

@@ -1,5 +1,5 @@
 <template>
-  <div class="columns-3 md:columns-4 gap-2">
+  <div class="columns-3 sm:columns-4 gap-2 sm:w-10/12">
     <div
       v-for="gfxImage in gfxImages"
       :key="gfxImage.id"
@@ -44,7 +44,7 @@ const desktopGfxImages = [
 
 const gfxImages = ref([]);
 
-const isMobile = () => window.innerWidth < 768;
+const isMobile = () => window.innerWidth < 640;
 
 const updateImages = () => {
   gfxImages.value = isMobile() ? mobileGfxImages : desktopGfxImages;

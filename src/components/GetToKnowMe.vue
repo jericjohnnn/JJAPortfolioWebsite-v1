@@ -1,7 +1,7 @@
 <template>
   <div class="bg-black text-white min-h-screen">
     <div class="container mx-auto px-4 py-14">
-      <h2 class="text-4xl font-bold my-8 text-center text-yellow">GET TO KNOW ME</h2>
+      <h2 class="text-4xl md:text-5xl font-bold my-8 text-center text-yellow">GET TO KNOW ME</h2>
 
       <div class="space-y-6 leading-relaxed text-justify">
         <p>
@@ -20,7 +20,7 @@
         </p>
       </div>
       <div class="mt-8 flex justify-center">
-        <img src="@/assets/boy_illustration.svg" alt="Hero image" class="h-80" />
+        <img src="@/assets/boy_illustration.svg" alt="Hero image" class="w-full md:w-9/12" />
       </div>
     </div>
   </div>

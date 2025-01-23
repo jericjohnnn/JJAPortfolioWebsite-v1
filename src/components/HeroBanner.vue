@@ -9,12 +9,12 @@
       <NavBar @selectedSection="emitSelectedSection" />
       <div class="flex flex-wrap items-center justify-center gap-16 pt-20 pb-16">
         <div class="space-y-4 text-center">
-          <h1 class="text-5xl font-bold text-yellow leading-tight">JERIC JOHN ALIGATO</h1>
-          <p class="text-lg leading-normal text-white">
+          <h1 class="text-5xl md:text-6xl font-bold text-yellow leading-tight">JERIC JOHN ALIGATO</h1>
+          <p class="text-lg md:text-xl leading-normal text-white">
             Turning Ideas into Code, and Hobbies into Art
           </p>
         </div>
-        <img src="@/assets/hero_image.webp" alt="Hero image" class="h-80" />
+        <img src="@/assets/hero_image.webp" alt="Hero image" class="w-5/6 md:w-4/6 " />
       </div>
       <div class="flex justify-center pb-6">
         <ChevronsDown
