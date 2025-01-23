@@ -1,23 +1,23 @@
 <template>
   <div
     :class="[
-      'min-h-screen text-white relative transition-colors duration-500',
+      ' text-white relative transition-colors duration-500',
       isOnDevView ? 'bg-black' : 'bg-yellow',
     ]"
   >
-    <div class="container mx-auto px-4 py-14">
+    <div class="container mx-auto px-4 py-14 min-h-screen place-content-center relative">
       <div class="flex flex-col items-center mb-8">
         <h2
           :class="[
-            'text-4xl font-bold text-center transition-colors duration-300',
+            'text-4xl font-bold text-center transition-colors duration-300 absolute top-14',
             isOnDevView ? 'text-yellow' : 'text-black',
           ]"
         >
           MY WORKS
         </h2>
       </div>
-      <MyWorksWeb v-if="isOnDevView" />
-      <MyWorksGfx v-if="!isOnDevView" />
+      <MyWorksWeb v-show="isOnDevView" />
+      <MyWorksGfx v-show="!isOnDevView" />
 
       <div
         :class="[
