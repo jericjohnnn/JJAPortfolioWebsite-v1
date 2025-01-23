@@ -54,11 +54,12 @@
 import MyWorksGfx from './MyWorksGfx.vue'
 import MyWorksWeb from './MyWorksWeb.vue'
 import { CodeXml, Palette } from 'lucide-vue-next'
+import { debounce } from 'lodash';
 import { ref } from 'vue'
 
 const isOnDevView = ref(true)
 
-const toggleisOnDevView = () => {
+const toggleisOnDevView = debounce(() => {
   isOnDevView.value = !isOnDevView.value
-}
+}, 200);
 </script>

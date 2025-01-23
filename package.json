@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@primevue/themes": "^4.2.5",
+    "lodash": "^4.17.21",
     "lucide-vue-next": "^0.473.0",
     "pinia": "^2.3.0",
     "primevue": "^4.2.5",
