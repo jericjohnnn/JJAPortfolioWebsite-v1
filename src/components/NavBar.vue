@@ -1,7 +1,12 @@
 <template>
   <div class="flex justify-between items-center">
     <img src="@/assets/jj_logo.webp" alt="JJ Logo" class="h-10" />
-    <div>
+    <div class="hidden lg:flex gap-16 text-lg text-white">
+      <a @click="emitSelectedSection('about')">ABOUT ME</a>
+      <a @click="emitSelectedSection('works')">MY WORKS</a>
+      <a @click="emitSelectedSection('contact')">CONTACT</a>
+    </div>
+    <div class="lg:hidden">
       <Menu :size="40" color="#ffffff" @click="isDrawerVisible = true" class="cursor-pointer" />
       <Drawer
         v-model:visible="isDrawerVisible"
