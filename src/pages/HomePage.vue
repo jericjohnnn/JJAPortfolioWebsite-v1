@@ -2,8 +2,10 @@
   <div>
     <HeroBanner id="hero" @selectedSection="scrollToSection" />
     <AboutMe class="hidden lg:block" />
-    <GetToKnowMe id="about" />
-    <MySkills />
+    <div class="block lg:hidden">
+      <GetToKnowMe id="about" />
+      <MySkills />
+    </div>
     <MyWorks id="works" />
     <ContactMe id="contact" />
     <FooterSection @selectedSection="scrollToSection" />

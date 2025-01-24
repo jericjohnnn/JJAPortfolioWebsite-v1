@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen w-full">
+  <div class="h-screen w-full relative">
     <!-- Flicking Carousel -->
     <VueFlicking
       ref="flicking"
@@ -11,26 +11,26 @@
         key="1"
         class="w-full h-full bg-red-500 text-white text-4xl font-bold"
       >
-      <GetToKnowMe />
+        card 1
       </div>
       <div
         key="2"
-        class="w-full h-full bg-blue-500 text-white text-4xl font-bold"
+        class="w-full h-full bg-blue-500"
       >
-      <MySkills />
+      <GetToKnowMe />
       </div>
       <div
         key="3"
-        class="w-full h-full bg-green-500 text-white text-4xl font-bold"
+        class="w-full h-full bg-green-500"
       >
-        Card 3
+      <MySkills />
       </div>
     </VueFlicking>
 
     <!-- Next Button -->
     <button
       @click="goToNext"
-      class="bottom-8 right-8 px-6 py-3 z-50 bg-black text-white text-lg font-semibold rounded-lg hover:bg-gray-800"
+      class="absolute bottom-8 right-8 px-6 py-3 z-50 bg-black text-white text-lg font-semibold rounded-lg hover:bg-gray-800"
     >
       Next
     </button>
