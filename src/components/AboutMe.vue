@@ -1,30 +1,36 @@
 <template>
-  <div class="relative h-screen w-screen flex flex-col items-center justify-center bg-gray-100">
+  <div class="h-screen w-full">
     <!-- Flicking Carousel -->
-    <FlicKing
+    <VueFlicking
       ref="flicking"
-      :circular="true"
-      :bound="true"
-      :moveType="{ type: 'snap', count: 1 }"
-      :draggable="false"
+      :options="{ circular: true, disableOnInit: true }"
       class="w-full h-full"
     >
       <!-- Full-screen cards -->
-      <div class="w-full h-full flex items-center justify-center bg-red-500 text-white text-4xl font-bold">
-        Card 1
+      <div
+        key="1"
+        class="w-full h-full bg-red-500 text-white text-4xl font-bold"
+      >
+      <GetToKnowMe />
       </div>
-      <div class="w-full h-full flex items-center justify-center bg-blue-500 text-white text-4xl font-bold">
-        Card 2
+      <div
+        key="2"
+        class="w-full h-full bg-blue-500 text-white text-4xl font-bold"
+      >
+      <MySkills />
       </div>
-      <div class="w-full h-full flex items-center justify-center bg-green-500 text-white text-4xl font-bold">
+      <div
+        key="3"
+        class="w-full h-full bg-green-500 text-white text-4xl font-bold"
+      >
         Card 3
       </div>
-    </FlicKing>
+    </VueFlicking>
 
     <!-- Next Button -->
     <button
       @click="goToNext"
-      class="absolute bottom-8 right-8 px-6 py-3 z-50 bg-black text-white text-lg font-semibold rounded-lg hover:bg-gray-800"
+      class="bottom-8 right-8 px-6 py-3 z-50 bg-black text-white text-lg font-semibold rounded-lg hover:bg-gray-800"
     >
       Next
     </button>
@@ -32,15 +38,16 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-
-const flicking = ref(null);
+import { ref } from 'vue'
+import GetToKnowMe from './GetToKnowMe.vue'
+import MySkills from './MySkills.vue'
+const flicking = ref(null)
 
 const goToNext = () => {
   if (flicking.value) {
     flicking.value.next().catch(() => {
       // Catch boundary error if at the end (non-circular Flicking)
-    });
+    })
   }
-};
+}
 </script>
