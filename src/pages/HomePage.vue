@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeroBanner id="hero" @selectedSection="scrollToSection" />
-    <AboutMe />
+    <AboutMe class="hidden lg:block" />
     <GetToKnowMe id="about" />
     <MySkills />
     <MyWorks id="works" />
