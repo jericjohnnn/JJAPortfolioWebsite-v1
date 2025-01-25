@@ -1,11 +1,11 @@
 <template>
-  <div class="columns-3 sm:columns-4 gap-2 sm:w-10/12">
+  <div class="columns-3 sm:columns-4 gap-2 sm:w-10/12 lg:w-8/12">
     <div
       v-for="gfxImage in gfxImages"
       :key="gfxImage.id"
       class="mb-2"
     >
-    <Image :src="gfxImage.url" :alt="gfxImage.alt" class="rounded shadow-md saturate-0" preview />
+    <Image :src="gfxImage.url" :alt="gfxImage.alt" class="rounded shadow-md saturate-0 hover:saturate-100" preview />
     </div>
   </div>
 </template>

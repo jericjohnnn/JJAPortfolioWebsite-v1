@@ -1,10 +1,12 @@
 <template>
   <div>
     <HeroBanner id="hero" @selectedSection="scrollToSection" />
-    <AboutMe class="hidden lg:block" />
-    <div class="block lg:hidden">
-      <GetToKnowMe id="about" />
-      <MySkills />
+    <div id="about">
+      <AboutMe class="hidden lg:block" />
+      <div class="block lg:hidden">
+        <GetToKnowMe />
+        <MySkills />
+      </div>
     </div>
     <MyWorks id="works" />
     <ContactMe id="contact" />
