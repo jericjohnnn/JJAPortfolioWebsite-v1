@@ -1,9 +1,20 @@
 <template>
-  <div class="bg-black text-white">
-    <div class="container mx-auto px-4 py-14">
-      <h2 class="text-4xl md:text-5xl font-bold mb-16 text-center text-yellow">MY SKILLS</h2>
+  <div class="h-full bg-black text-white">
+    <div class="h-full flex flex-col justify-between gap-14 container mx-auto px-4 py-14 lg:px-8 xl:px-12">
+      <div class="flex justify-center lg:justify-between">
+        <h2 class="text-4xl md:text-5xl font-bold text-center text-yellow">MY SKILLS</h2>
+        <div class="hidden lg:block">
+          <Button
+            @click="emitNextAction"
+            label="Return →"
+            variant="outlined"
+            rounded
+            pt:root="!text-yellow !border-yellow hover:!bg-yellow hover:!text-black h-fit !px-6"
+          />
+        </div>
+      </div>
 
-      <div class="space-y-16 mb-8">
+      <div class="space-y-16 ">
         <div class="text-center">
           <h3 class="text-2xl font-semibold mb-6">Web Development</h3>
           <div class="flex flex-wrap gap-3 justify-center items-center">
@@ -30,12 +41,21 @@
           </div>
         </div>
       </div>
+      <div class="hidden lg:block">
+        <img src="@/assets/my_skills_img.svg" alt="My skills image" class="w-full" />
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-const webSkills = ['Laravel', 'VueJS', 'MySQL', 'TailwindCSS', 'Javascript', 'PHP', 'HTML', 'CSS']
+import { Button } from 'primevue'
 
+const webSkills = ['Laravel', 'VueJS', 'MySQL', 'TailwindCSS', 'Javascript', 'PHP', 'HTML', 'CSS']
 const designSkills = ['Figma', 'Adobe XD', 'Adobe Photoshop', 'Canva']
+
+const emit = defineEmits(['nextAction'])
+const emitNextAction = () => {
+  emit('nextAction')
+}
 </script>

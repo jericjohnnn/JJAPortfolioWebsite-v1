@@ -1,13 +1,13 @@
 <template>
-  <div class="relative min-h-screen">
+  <div class="relative">
     <img
       src="@/assets/hero_bg.svg"
       alt="Hero Background"
       class="absolute w-full h-full -z-10 object-cover object-left"
     />
-    <div class="container mx-auto p-4">
+    <div class="min-h-screen flex flex-col gap-10 justify-between container mx-auto p-4 lg:p-8 xl:px-12">
       <NavBar @selectedSection="emitSelectedSection" />
-      <div class="flex flex-wrap items-center justify-center gap-16 pt-20 pb-16 lg:pb-20">
+      <div class="flex flex-wrap items-center justify-center gap-16">
         <div class="space-y-4 text-center lg:w-96 lg:text-left">
           <h1 class="text-5xl md:text-6xl font-bold text-yellow leading-tight">JERIC JOHN ALIGATO</h1>
           <p class="text-lg md:text-xl leading-normal text-white">
@@ -16,7 +16,7 @@
         </div>
         <img src="@/assets/hero_image.webp" alt="Hero image" class="w-5/6 md:w-4/6 lg:w-96" />
       </div>
-      <div class="flex justify-center pb-6 lg:pb-0">
+      <div class="flex justify-center pb-6">
         <ChevronsDown
           :size="48"
           :stroke-width="1.5"

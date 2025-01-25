@@ -2,12 +2,31 @@
   <div class="flex justify-between items-center">
     <img src="@/assets/jj_logo.webp" alt="JJ Logo" class="h-10" />
     <div class="hidden lg:flex gap-16 text-lg text-white">
-      <a @click="emitSelectedSection('about')">ABOUT ME</a>
-      <a @click="emitSelectedSection('works')">MY WORKS</a>
-      <a @click="emitSelectedSection('contact')">CONTACT</a>
+      <a @click="emitSelectedSection('about')" class="cursor-pointer relative group">
+        ABOUT ME
+        <span
+          class="absolute bottom-0 left-0 w-0 h-[2px] bg-yellow transition-all duration-300 group-hover:w-full"
+        >
+        </span>
+      </a>
+      <a @click="emitSelectedSection('works')" class="cursor-pointer relative group">
+        MY WORKS
+        <span
+          class="absolute bottom-0 left-0 w-0 h-[2px] bg-yellow transition-all duration-300 group-hover:w-full"
+        >
+        </span>
+      </a>
+      <a @click="emitSelectedSection('contact')" class="cursor-pointer relative group">
+        CONTACT
+        <span
+          class="absolute bottom-0 left-0 w-0 h-[2px] bg-yellow transition-all duration-300 group-hover:w-full"
+        >
+        </span>
+      </a>
     </div>
+
     <div class="lg:hidden">
-      <Menu :size="40" color="#ffffff" @click="isDrawerVisible = true" class="cursor-pointer" />
+      <Menu :size="40" color="#ffffff" @click="isDrawerVisible = true" />
       <Drawer
         v-model:visible="isDrawerVisible"
         position="full"
