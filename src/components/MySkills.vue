@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full bg-black text-white">
+  <div class="h-full lg:h-screen bg-black text-white">
     <div class="h-full flex flex-col justify-between gap-14 container mx-auto px-4 py-14 lg:px-8 xl:px-12">
       <div class="flex justify-center lg:justify-between">
         <h2 class="text-4xl md:text-5xl font-bold text-center text-yellow">MY SKILLS</h2>

@@ -26,7 +26,7 @@
               @click="goToNext"
               label="Show More"
               rounded
-              pt:root="!text-black !border-yellow !bg-yellow hover:!bg-black hover:!text-yellow h-fit !px-6 !w-auto"
+              pt:root="!text-black !border-none !bg-yellow hover:!bg-black hover:!text-yellow h-fit !px-6 !w-auto"
             />
           </div>
         </div>
