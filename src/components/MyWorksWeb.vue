@@ -13,7 +13,7 @@
       <div
         v-for="(item, index) in carouselItems"
         :key="index"
-        class="w-full sm:w-5/6 md:w-1/2 lg:w-4/6"
+        class="w-full sm:w-5/6 md:w-1/2 lg:w-1/3"
       >
         <Card class="w-full h-full overflow-hidden">
           <template #header>
@@ -42,12 +42,12 @@
                 :key="linkIndex"
                 :href="link.url"
                 target="_blank"
-                class="flex items-center px-2 py-1 md:px-3 md:py-1 text-xs md:text-sm bg-yellow text-black rounded-full space-x-2"
+                class="flex flex-wrap items-center px-5 py-2 bg-black text-yellow rounded-full space-x-2"
               >
-                <img :src="link.icon" alt="icon" class="h-2 w-2" />
-                <span class="text-base md:text-lg">
+                <span class="text-base">
                   {{ link.label }}
                 </span>
+                <box-icon :type="link.icon === 'globe' ? '' : 'logo'" :name="link.icon" color='#F6E332' animation='tada'></box-icon>
               </a>
             </div>
           </template>
@@ -71,11 +71,11 @@ const plugins = [new Perspective({ rotate: 0.5 }), new Fade(), new Pagination({ 
 const carouselItems = [
   {
     image: 'src/assets/works_dev/passafun.webp',
-    title: 'Project Beta',
-    description: 'Revolutionizing the way we think about technology.',
+    title: 'Tudlo',
+    description: 'An online central place for all Tutors in Consolatrix College Toledo City inc.',
     links: [
-      { label: 'Case Study', icon: 'src/assets/icons/github.svg', url: '#' },
-      { label: 'Contact', icon: 'src/assets/icons/github.svg', url: '#' },
+      { label: 'Behance', icon: 'behance', url: 'https://www.behance.net/gallery/217925539/TUDLO-CAPSTONE-PROJECT-2024' },
+      { label: 'Github', icon: 'github', url: 'https://github.com/jericjohnnn/Capstone-2024' },
     ],
   },
   {
@@ -84,18 +84,14 @@ const carouselItems = [
     description:
       'A dynamic frontend platform designed to seamlessly adapt to customizable quiz settings and content delivered by the CMS.',
     links: [
-      { label: 'Case Study', icon: 'src/assets/icons/github.svg', url: '#' },
-      { label: 'Contact', icon: 'src/assets/icons/github.svg', url: '#' },
+      { label: 'Live demo', icon: 'globe', url: 'https://play.passafund.com/' },
     ],
   },
   {
     image: 'src/assets/works_dev/passafun.webp',
-    title: 'Project Gamma',
-    description: 'Pushing the boundaries of innovation.',
-    links: [
-      { label: 'Case Study', icon: 'src/assets/icons/github.svg', url: '#' },
-      { label: 'Contact', icon: 'src/assets/icons/github.svg', url: '#' },
-    ],
+    title: 'Portfolio website',
+    description: 'A sleek portfolio showcasing my projects, skills, and experience as a software engineer.',
+    links: [{ label: 'Github', icon: 'github', url: 'https://github.com/jericjohnnn/JJAPortfolioWebsite' }],
   },
 ]
 </script>

@@ -14,6 +14,7 @@
     "@egjs/flicking-plugins": "^4.7.1",
     "@egjs/vue3-flicking": "^4.12.0",
     "@primevue/themes": "^4.2.5",
+    "boxicons": "^2.1.4",
     "lodash": "^4.17.21",
     "lucide-vue-next": "^0.473.0",
     "pinia": "^2.3.0",
