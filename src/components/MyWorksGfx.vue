@@ -15,7 +15,7 @@ import { Image } from 'primevue';
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const mobileGfxImages = [
-  { id: 1, url: 'src/assets/works_gfx/2-min.webp', alt: 'Image 1' },
+  { id: 1, url: 'src/assets/works_gfx/image-two.webp', alt: 'Image 1' },
   { id: 7, url: 'src/assets/works_gfx/6-min.webp', alt: 'Image 7' },
   { id: 3, url: 'src/assets/works_gfx/8-min.webp', alt: 'Image 3' },
   { id: 4, url: 'src/assets/works_gfx/7-min.webp', alt: 'Image 4' },
@@ -29,7 +29,7 @@ const mobileGfxImages = [
 ];
 
 const desktopGfxImages = [
-  { id: 1, url: 'src/assets/works_gfx/2-min.webp', alt: 'Image 1' },
+  { id: 1, url: 'src/assets/works_gfx/image-two.webp', alt: 'Image 1' },
   { id: 2, url: 'src/assets/works_gfx/9-min.webp', alt: 'Image 2' },
   { id: 3, url: 'src/assets/works_gfx/8-min.webp', alt: 'Image 3' },
   { id: 4, url: 'src/assets/works_gfx/7-min.webp', alt: 'Image 4' },
