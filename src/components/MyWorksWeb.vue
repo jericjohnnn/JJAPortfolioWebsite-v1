@@ -1,23 +1,21 @@
 <template>
-  <div class="w-full px-4 md:px-8 lg:px-16">
+  <div class="w-full">
     <VueFlicking
       :options="{
         circular: true,
-        align: 'center',
         defaultIndex: 1,
-        bounce: '100%'
+        autoInit: true,
+        bounce: '100%',
       }"
       :plugins="plugins"
-      class="py-4"
+      class="py-4 w-full"
     >
       <div
         v-for="(item, index) in carouselItems"
         :key="index"
-        class="carousel-panel w-full sm:w-5/6 md:w-1/2 lg:w-1/3"
+        class="w-full sm:w-5/6 md:w-1/2 lg:w-4/6"
       >
-        <Card
-          class="w-full h-full overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl"
-        >
+        <Card class="w-full h-full overflow-hidden">
           <template #header>
             <div class="w-full h-48 md:h-56 lg:h-64 overflow-hidden">
               <img
@@ -43,24 +41,32 @@
                 v-for="(link, linkIndex) in item.links"
                 :key="linkIndex"
                 :href="link.url"
-                class="px-2 py-1 md:px-3 md:py-1 text-xs md:text-sm bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors"
+                target="_blank"
+                class="flex items-center px-2 py-1 md:px-3 md:py-1 text-xs md:text-sm bg-yellow text-black rounded-full space-x-2"
               >
-                {{ link.label }}
+                <img :src="link.icon" alt="icon" class="h-2 w-2" />
+                <span class="text-base md:text-lg">
+                  {{ link.label }}
+                </span>
               </a>
             </div>
           </template>
         </Card>
       </div>
+      <template #viewport>
+        <div class="flicking-pagination"></div>
+      </template>
     </VueFlicking>
   </div>
 </template>
 
 <script setup>
 import { Perspective } from '@egjs/flicking-plugins'
-import { Fade } from "@egjs/flicking-plugins";
+import { Pagination } from '@egjs/flicking-plugins'
+import { Fade } from '@egjs/flicking-plugins'
 import { Card } from 'primevue'
 
-const plugins = [new Perspective({ rotate: 0.5 }), new Fade()]
+const plugins = [new Perspective({ rotate: 0.5 }), new Fade(), new Pagination({ type: 'bullet' })]
 
 const carouselItems = [
   {
@@ -68,17 +74,18 @@ const carouselItems = [
     title: 'Project Beta',
     description: 'Revolutionizing the way we think about technology.',
     links: [
-      { label: 'Learn More', url: '#' },
-      { label: 'Live Demo', url: '#' },
+      { label: 'Case Study', icon: 'src/assets/icons/github.svg', url: '#' },
+      { label: 'Contact', icon: 'src/assets/icons/github.svg', url: '#' },
     ],
   },
   {
     image: 'src/assets/works_dev/passafun.webp',
-    title: 'PassaFun',
-    description: 'A dynamic frontend platform designed to seamlessly adapt to customizable quiz settings and content delivered by the CMS.',
+    title: 'Passaquiz',
+    description:
+      'A dynamic frontend platform designed to seamlessly adapt to customizable quiz settings and content delivered by the CMS.',
     links: [
-      { label: 'Details', url: '#' },
-      { label: 'GitHub', url: '#' },
+      { label: 'Case Study', icon: 'src/assets/icons/github.svg', url: '#' },
+      { label: 'Contact', icon: 'src/assets/icons/github.svg', url: '#' },
     ],
   },
   {
@@ -86,15 +93,29 @@ const carouselItems = [
     title: 'Project Gamma',
     description: 'Pushing the boundaries of innovation.',
     links: [
-      { label: 'Case Study', url: '#' },
-      { label: 'Contact', url: '#' },
+      { label: 'Case Study', icon: 'src/assets/icons/github.svg', url: '#' },
+      { label: 'Contact', icon: 'src/assets/icons/github.svg', url: '#' },
     ],
-  }
+  },
 ]
 </script>
 
 <style>
-.carousel-panel {
-  margin-right: -10px !important;
+.p-card-body {
+  padding: 10px !important;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.flicking-viewport {
+  padding-bottom: 3rem !important;
+}
+
+.flicking-pagination-bullet {
+  background-color: #fcfcfc;
+}
+
+.flicking-pagination-bullet-active {
+  background-color: #f6e332;
 }
 </style>
