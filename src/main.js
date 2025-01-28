@@ -15,9 +15,13 @@ import router from './router'
 const app = createApp(App)
 
 app.component("VueFlicking", Flicking)
+app.component("VueFlicking", Flicking)
 app.use(PrimeVue, {
   theme: {
     preset: Aura,
+    options: {
+      darkModeSelector: false,
+    },
     options: {
       darkModeSelector: false,
     },

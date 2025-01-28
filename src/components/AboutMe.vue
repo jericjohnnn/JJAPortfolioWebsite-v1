@@ -56,3 +56,19 @@ const goToNext = () => {
   }
 }
 </script>
+
+<script setup>
+import { ref } from 'vue'
+import GetToKnowMe from './GetToKnowMe.vue'
+import MySkills from './MySkills.vue'
+import { Button } from 'primevue'
+const flicking = ref(null)
+
+const goToNext = () => {
+  if (flicking.value) {
+    flicking.value.next().catch(() => {
+      // Catch boundary error if at the end (non-circular Flicking)
+    })
+  }
+}
+</script>
