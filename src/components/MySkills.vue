@@ -51,15 +51,8 @@
 <script setup>
 import { Button } from 'primevue'
 
-import { Button } from 'primevue'
-
 const webSkills = ['Laravel', 'VueJS', 'MySQL', 'TailwindCSS', 'Javascript', 'PHP', 'HTML', 'CSS']
 const designSkills = ['Figma', 'Adobe XD', 'Adobe Photoshop', 'Canva']
-
-const emit = defineEmits(['nextAction'])
-const emitNextAction = () => {
-  emit('nextAction')
-}
 
 const emit = defineEmits(['nextAction'])
 const emitNextAction = () => {

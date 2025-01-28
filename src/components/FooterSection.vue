@@ -23,9 +23,4 @@ const emit = defineEmits(['selectedSection'])
 const emitSelectedSection = (section) => {
   emit('selectedSection', section)
 }
-
-const emit = defineEmits(['selectedSection'])
-const emitSelectedSection = (section) => {
-  emit('selectedSection', section)
-}
 </script>
