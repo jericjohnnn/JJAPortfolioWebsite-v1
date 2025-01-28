@@ -1,5 +1,3 @@
-link -> jericjohnaligato.vercel.app
-  <!-- TODO: CHANGE CURRENT IMAGES TO SVG -->
-WORKING ON RESPONSIVENESS
+# Visit my portfolio website
 
-THIS PROJECT IS ON A HIATUS. THE PERSON IN CHARGE(ME) IS BUSY
+Portfolio URL [jericjohnaligato](https://jericjohnaligato.vercel.app/).
