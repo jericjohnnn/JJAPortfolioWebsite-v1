@@ -70,7 +70,7 @@ const plugins = [new Perspective({ rotate: 0.5 }), new Fade(), new Pagination({ 
 
 const carouselItems = [
   {
-    image: 'src/assets/works_dev/passafun.webp',
+    image: 'src/assets/works_dev/tudlo.webp',
     title: 'Tudlo',
     description: 'An online central place for all Tutors in Consolatrix College Toledo City inc.',
     links: [
@@ -88,7 +88,7 @@ const carouselItems = [
     ],
   },
   {
-    image: 'src/assets/works_dev/passafun.webp',
+    image: 'src/assets/works_dev/jja.webp',
     title: 'Portfolio website',
     description: 'A sleek portfolio showcasing my projects, skills, and experience as a software engineer.',
     links: [{ label: 'Github', icon: 'github', url: 'https://github.com/jericjohnnn/JJAPortfolioWebsite' }],

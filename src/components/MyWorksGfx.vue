@@ -1,5 +1,5 @@
 <template>
-  <div class="columns-3 sm:columns-4 gap-2 sm:w-10/12 lg:w-8/12">
+  <div class="columns-3 sm:columns-4 gap-2 sm:w-10/12 lg:w-7/12">
     <div
       v-for="gfxImage in gfxImages"
       :key="gfxImage.id"
