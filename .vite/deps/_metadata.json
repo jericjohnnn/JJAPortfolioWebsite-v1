@@ -2,7 +2,60 @@
   "hash": "b4259aac",
   "configHash": "bec1e7b9",
   "lockfileHash": "06e44692",
-  "browserHash": "1885eb1b",
-  "optimized": {},
-  "chunks": {}
+  "browserHash": "e8110dbc",
+  "optimized": {
+    "boxicons": {
+      "src": "../../node_modules/boxicons/dist/boxicons.js",
+      "file": "boxicons.js",
+      "fileHash": "8993bfa8",
+      "needsInterop": true
+    },
+    "vue": {
+      "src": "../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "8b1d4892",
+      "needsInterop": false
+    },
+    "pinia": {
+      "src": "../../node_modules/pinia/dist/pinia.mjs",
+      "file": "pinia.js",
+      "fileHash": "19129440",
+      "needsInterop": false
+    },
+    "primevue/config": {
+      "src": "../../node_modules/primevue/config/index.mjs",
+      "file": "primevue_config.js",
+      "fileHash": "c161934d",
+      "needsInterop": false
+    },
+    "@primevue/themes/aura": {
+      "src": "../../node_modules/@primevue/themes/aura/index.mjs",
+      "file": "@primevue_themes_aura.js",
+      "fileHash": "4ccb37b4",
+      "needsInterop": false
+    },
+    "@egjs/vue3-flicking": {
+      "src": "../../node_modules/@egjs/vue3-flicking/dist/flicking.esm.js",
+      "file": "@egjs_vue3-flicking.js",
+      "fileHash": "a1c28c9d",
+      "needsInterop": false
+    },
+    "vue-router": {
+      "src": "../../node_modules/vue-router/dist/vue-router.mjs",
+      "file": "vue-router.js",
+      "fileHash": "bed0036e",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-AYVSL3LM": {
+      "file": "chunk-AYVSL3LM.js"
+    },
+    "chunk-IJV5NOMV": {
+      "file": "chunk-IJV5NOMV.js"
+    },
+    "chunk-BUSYA2B4": {
+      "file": "chunk-BUSYA2B4.js"
+    }
+  }
 }
