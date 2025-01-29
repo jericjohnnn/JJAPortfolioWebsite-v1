@@ -15,31 +15,31 @@ import { Image } from 'primevue';
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const mobileGfxImages = [
-  { id: 1, url: 'src/assets/2-min.webp', alt: 'Image 1' },
-  { id: 7, url: 'src/assets/worksGfx/6-min.webp', alt: 'Image 7' },
-  { id: 3, url: 'src/assets/worksGfx/8-min.webp', alt: 'Image 3' },
-  { id: 4, url: 'src/assets/worksGfx/7-min.webp', alt: 'Image 4' },
-  { id: 5, url: 'src/assets/worksGfx/4-min.webp', alt: 'Image 5' },
-  { id: 6, url: 'src/assets/worksGfx/13-min.webp', alt: 'Image 6' },
-  { id: 2, url: 'src/assets/worksGfx/9-min.webp', alt: 'Image 2' },
-  { id: 10, url: 'src/assets/worksGfx/3-min.webp', alt: 'Image 10' },
-  { id: 8, url: 'src/assets/worksGfx/11-min.webp', alt: 'Image 8' },
-  { id: 9, url: 'src/assets/worksGfx/12-min.webp', alt: 'Image 9' },
-  { id: 11, url: 'src/assets/worksGfx/14-min.webp', alt: 'Image 11' },
+  { id: 1, url: './assets/worksGfx/2-min.webp', alt: 'Image 1' },
+  { id: 7, url: './assets/worksGfx/6-min.webp', alt: 'Image 7' },
+  { id: 3, url: './assets/worksGfx/8-min.webp', alt: 'Image 3' },
+  { id: 4, url: './src/assets/worksGfx/7-min.webp', alt: 'Image 4' },
+  { id: 5, url: './src/assets/worksGfx/4-min.webp', alt: 'Image 5' },
+  { id: 6, url: './src/assets/worksGfx/13-min.webp', alt: 'Image 6' },
+  { id: 2, url: './src/assets/worksGfx/9-min.webp', alt: 'Image 2' },
+  { id: 10, url: './src/assets/worksGfx/3-min.webp', alt: 'Image 10' },
+  { id: 8, url: './src/assets/worksGfx/11-min.webp', alt: 'Image 8' },
+  { id: 9, url: './src/assets/worksGfx/12-min.webp', alt: 'Image 9' },
+  { id: 11, url: './src/assets/worksGfx/14-min.webp', alt: 'Image 11' },
 ];
 
 const desktopGfxImages = [
-  { id: 1, url: 'src/assets/2-min.webp', alt: 'Image 1' },
-  { id: 2, url: 'src/assets/worksGfx/9-min.webp', alt: 'Image 2' },
-  { id: 3, url: 'src/assets/worksGfx/8-min.webp', alt: 'Image 3' },
-  { id: 4, url: 'src/assets/worksGfx/7-min.webp', alt: 'Image 4' },
-  { id: 5, url: 'src/assets/worksGfx/4-min.webp', alt: 'Image 5' },
-  { id: 6, url: 'src/assets/worksGfx/13-min.webp', alt: 'Image 6' },
-  { id: 7, url: 'src/assets/worksGfx/6-min.webp', alt: 'Image 7' },
-  { id: 8, url: 'src/assets/worksGfx/11-min.webp', alt: 'Image 8' },
-  { id: 9, url: 'src/assets/worksGfx/12-min.webp', alt: 'Image 9' },
-  { id: 10, url: 'src/assets/worksGfx/3-min.webp', alt: 'Image 10' },
-  { id: 11, url: 'src/assets/worksGfx/14-min.webp', alt: 'Image 11' },
+  { id: 1, url: './assets/worksGfx/2-min.webp', alt: 'Image 1' },
+  { id: 2, url: './assets/worksGfx/9-min.webp', alt: 'Image 2' },
+  { id: 3, url: './assets/worksGfx/8-min.webp', alt: 'Image 3' },
+  { id: 4, url: './src/assets/worksGfx/7-min.webp', alt: 'Image 4' },
+  { id: 5, url: './src/assets/worksGfx/4-min.webp', alt: 'Image 5' },
+  { id: 6, url: './src/assets/worksGfx/13-min.webp', alt: 'Image 6' },
+  { id: 7, url: './src/assets/worksGfx/6-min.webp', alt: 'Image 7' },
+  { id: 8, url: './src/assets/worksGfx/11-min.webp', alt: 'Image 8' },
+  { id: 9, url: './src/assets/worksGfx/12-min.webp', alt: 'Image 9' },
+  { id: 10, url: './src/assets/worksGfx/3-min.webp', alt: 'Image 10' },
+  { id: 11, url: './src/assets/worksGfx/14-min.webp', alt: 'Image 11' },
 ];
 
 const gfxImages = ref([]);
